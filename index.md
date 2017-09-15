@@ -38,10 +38,10 @@ students to put these ideas into practice in a variety of exercises.
 
 |   |    |
 |---|:---|
-**Lecture (MB)** &nbsp;| Mon 11.00-12.00 EB A218
-**Lecture (DK)** | Tue 10.00 - 11.00 EB A113
-**Lab/Seminar**       | Thu 11.00-13.00 PB F1 (Weeks 1,3,5,7,9,11)
-**Lab/Seminar**       | Thu 15.00-17.00 PB F1 (Weeks 2,4,6,8,10,12)
+**Lecture (MB)** &nbsp;| Mon 16.00-17.00 EB A109
+**Lecture (DK)** | Tue 10.00 - 11.00 EB A107
+**Lab/Seminar**       | Tue 15.00-17.00 PB F1 (Weeks 1,3,5,7,9,11)
+**Lab/Seminar**       | Thu 09.00-11.00 PB F1 (Weeks 2,4,6,8,10,12)
 
 <p class="text-info">
 You should attend <em>both</em> lecture sessions and the
@@ -156,7 +156,7 @@ Goetz, B., Java Concurrency in Practice, Addison Wesley, 2006.
 
 
 <li><strong>[LAB02]</strong>
-Labrosse, J., MicroC/OS II, 2nd Ed, CMP Books, 2002
+Labrosse, J.,<a href="{{site.raurl}}/100-uC-OS-II-003.pdf">MicroC/OS II</a>, 2nd Ed, CMP Books, 2002
 </li>
 
 
@@ -287,10 +287,10 @@ on developing software for real-time and embedded systems.
 <li> <strong>Embedded C Programming</strong>
 <ul>
 <li>
-<a href="{{site.raurl}}/assets/ra/nasa-c-style.pdf">NASA C Coding Standard</a>
+<a href="{{site.raurl}}/nasa-c-style.pdf">NASA C Coding Standard</a>
 </li>
 <li>
-<a href="{{site.raurl}}/assets/ra/power_of_ten.pdf">The Power of 10 - Rules for Developing Safety Critical Code</a>
+<a href="{{site.raurl}}/power_of_ten.pdf">The Power of 10 - Rules for Developing Safety Critical Code</a>
 </li>
 <li>
 <a href="https://www.misra.org.uk/MISRAHome/MISRAC2012/tabid/196/Default.aspx">MISRA C Standard: 2012</a>
