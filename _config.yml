@@ -8,11 +8,11 @@ title: CM0605
 subtitle: Embedded systems engineering
 authors: Michael Brockway, David Kendall
 copyyear: 2015-2017
-#url: http://hesabu.net/cm0605
-#raurl: http://hesabu.net/cm0605/assets/ra
+url: http://hesabu.net/cm0605
+raurl: http://hesabu.net/cm0605/assets/ra
 rraurl: http://cgweb1.northumbria.ac.uk/SubjectAreaResources/CM0605/assets/ra
-url: http://localhost:4000
-raurl: http://localhost:4000/assets/ra
+#url: http://localhost:4000
+#raurl: http://localhost:4000/assets/ra
 
 lab_links:
   - title: Lab 1 - ISR, Timers
