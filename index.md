@@ -41,7 +41,7 @@ students to put these ideas into practice in a variety of exercises.
 **Lecture (MB)** &nbsp;| Mon 16.00-17.00 EB A109
 **Lecture (DK)** | Tue 10.00 - 11.00 EB A107
 **Lab/Seminar**       | Tue 15.00-17.00 PB F1 (Weeks 1,3,5,7,9,11)
-**Lab/Seminar**       | Thu 09.00-11.00 PB F1 (Weeks 2,4,6,8,10,12)
+**Lab/Seminar**       | Fri 09.00-11.00 PB F1 (Weeks 2,4,6,8,10,12)
 
 <p class="text-info">
 You should attend <em>both</em> lecture sessions and the
