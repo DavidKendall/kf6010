@@ -275,6 +275,7 @@ Documentation for the Olimex development prototype board
 </li>
 <li>
 <a href="https://www.misra.org.uk/MISRAHome/MISRAC2012/tabid/196/Default.aspx">MISRA C Standard: 2012</a>
+</li>
 <li>
 <a href="http://blog.feabhas.com/2009/12/unscrambling-c-declarations/">Unscrambling C declarations</a>
 </li>

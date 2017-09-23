@@ -1,8 +1,10 @@
-markdown: redcarpet
+markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-highlighter: pygments
-redcarpet:
-  extensions: [ "no_intra_emphasis", "fenced_code_blocks", disable_indented_code_blocks, "autolink", "tables", "with_toc_data" ]
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
 
 title: CM0605
 subtitle: Embedded systems engineering
