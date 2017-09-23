@@ -196,14 +196,13 @@ Controller Area Network (CAN) schedulability analysis: Refuted, revisited and re
 
 # Resources
 
-<ul>
-<li><strong>Response time and scheduling calculator</strong>
+<p><strong>Response time and scheduling calculator</strong></p>
 <ul>
 <li><a href="{{site.raurl}}/RespTime.jar">RespTime.jar</a> and <a href="{{site.raurl}}/RespTime.Readme.pdf">manual</a> and <a href="{{site.raurl}}/data.txt">data.txt</a></li>
 <li><a href="{{site.raurl}}/RespTime.src.zip">Source files FYI</a></li>
 </ul>
-</li>
-<li><strong>IAR</strong>
+
+<p><strong>IAR</strong></p>
 <ul>
 <li>
 <a href="{{site.raurl}}/EWARM_UserGuide.ENU.pdf">Embedded Workbench User Guide</a>
@@ -215,9 +214,9 @@ Controller Area Network (CAN) schedulability analysis: Refuted, revisited and re
 <a href="{{site.raurl}}/">uCOS-II-CSPY User Guide</a>
 </li>
 </ul>
-</li>
 
-<li><strong>Micrium (<a href="http://micrium.com">site</a>)</strong>
+
+<p><strong>Micrium (<a href="http://micrium.com">site</a>)</strong></p>
 <ul>
 <li>
 <a href="{{site.raurl}}/ucosii_datasheet.pdf">uC/OS-II Datasheet</a>
@@ -240,9 +239,9 @@ on LPC2378</a>
 on LPC2378</a>
 </li>
 </ul>
-</li>
 
-<li><strong>LPC2378</strong>
+
+<p><strong>LPC2378</strong></p>
 <ul>
 <li>
 <a href="https://www.olimex.com/Products/ARM/NXP/LPC2378-STK/">Olimex LPC2378-STK</a>
@@ -265,26 +264,8 @@ Documentation for the Olimex development prototype board
 </li>
 
 </ul>
-</li>
 
-
-<li> <strong>Miscellaneous</strong>
-<ul>
-<li><a href="http://www.eetimes.com/design/embedded">EE Times</a>
-Embedded Design Centre for Electrical Engineers.
-</li>
-<li><a href="http://embeddedgurus.com/">Embedded Gurus</a> A blog from
-a variety of experts on embedded software.
-</li>
-<li><a href="http://www.ganssle.com/">The Ganssle Group</a> Jack Ganssle's page has lots of useful embedded systems development information and links to other information sources.
-</li>
-<li><a href="http://blog.feabhas.com/">Sticky Bits</a> Niall Cooling's blog
-on developing software for real-time and embedded systems.
-</li>
-</ul>
-</li>
-
-<li> <strong>Embedded C Programming</strong>
+<p> <strong>Embedded C Programming</strong></p>
 <ul>
 <li>
 <a href="{{site.raurl}}/nasa-c-style.pdf">NASA C Coding Standard</a>
@@ -322,5 +303,20 @@ on developing software for real-time and embedded systems.
 <a href="http://embeddedgurus.com/stack-overflow/2011/01/configuring-hardware-part-3/">Configuring hardware part 3</a>
 </li>
 </ul>
+
+<p> <strong>Miscellaneous</strong></p>
+<ul>
+<li><a href="http://www.eetimes.com/design/embedded">EE Times</a>
+Embedded Design Centre for Electrical Engineers.
+</li>
+<li><a href="http://embeddedgurus.com/">Embedded Gurus</a> A blog from
+a variety of experts on embedded software.
+</li>
+<li><a href="http://www.ganssle.com/">The Ganssle Group</a> Jack Ganssle's page has lots of useful embedded systems development information and links to other information sources.
+</li>
+<li><a href="http://blog.feabhas.com/">Sticky Bits</a> Niall Cooling's blog
+on developing software for real-time and embedded systems.
+</li>
 </ul>
+
 
