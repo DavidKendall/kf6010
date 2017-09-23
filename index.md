@@ -322,6 +322,5 @@ on developing software for real-time and embedded systems.
 <a href="http://embeddedgurus.com/stack-overflow/2011/01/configuring-hardware-part-3/">Configuring hardware part 3</a>
 </li>
 </ul>
-</li>
 </ul>
 
