@@ -40,11 +40,11 @@ students to put these ideas into practice in a variety of exercises.
 |---|:---|
 **Lecture (MB)** &nbsp;| Mon 16.00-17.00 EB A109
 **Lecture (DK)** | Tue 10.00 - 11.00 EB A107
-**Lab/Seminar**       | Tue 15.00-17.00 PB F1 (Weeks 1,3,5,7,9,11)
-**Lab/Seminar**       | Fri 09.00-11.00 PB F1 (Weeks 2,4,6,8,10,12)
+**Lab/Seminar**       | Fri 09.00-11.00 PB F1 
+**Lab/Seminar**       | Fri 15.00-17.00 PB F1 
 
 <p class="text-info">
-You should attend <em>both</em> lecture sessions and the
+You should attend <em>both</em> lecture sessions and <em>one</em>
 lab/seminar session every week.
 </p>
 
@@ -108,9 +108,11 @@ should be spending about 13 hours per week on this module.
 Summative assessment comprises:
 
   * A portfolio of work relating to the syllabus topics, carried out over the
-    semester and submitted in week 12. Typically one exercise per major topic
-    which may involve: a small research activity, programming, or a pen and
-    paper exercise as appropriate.
+semester and submitted in week 12. Typically one exercise per major topic
+which may involve: a small research activity, programming, or a pen and
+paper exercise as appropriate. This is a single assessment, contributing 100% of the
+module mark.
+
 
 Formative assessment comprises a variety of theoretical and practical exercises
 with opportunities for discussion with tutors and colleagues.
