@@ -2,7 +2,7 @@
 layout: default
 title: Home
 ---
-# Introduction
+## Introduction
 
 
 <p class="lead">
@@ -26,29 +26,36 @@ communicated in a series of 24 lectures. The laboratory sessions are used by
 students to put these ideas into practice in a variety of exercises.
 
 
-# Module Team
+## Module Team
 
 |   |    |
 |---|:---|
-|Module Tutor &nbsp;  | [Michael Brockway](http://computing.northumbria.ac.uk/staff/cgmb3)|
+|Module Tutor &nbsp;  | [Alun Moon](http://computing.northumbria.ac.uk/staff/cgam1)|
 |Lecturer      | [David Kendall](http://computing.northumbria.ac.uk/staff/cgdk2)
 
 
-# Teaching Arrangements
+## Teaching Arrangements
 
 |   |    |
 |---|:---|
-**Lecture (MB)** &nbsp;| Mon 16.00-17.00 EB A109
-**Lecture (DK)** | Tue 10.00 - 11.00 EB A107
-**Lab/Seminar**       | Fri 09.00-11.00 PB F1 
-**Lab/Seminar**       | Fri 15.00-17.00 PB F1 
+**Lecture** &nbsp;| Tue 13.00-14.00 ELA 003
+**Lab/Seminar**       | Thu 14.00-15.00  CIS 201 
+**Lab/Seminar**       | Fri 13.00-14.00 CIS 201 
 
 <p class="text-info">
-You should attend <em>both</em> lecture sessions and <em>one</em>
+You should attend the lecture session and <em>one</em>
 lab/seminar session every week.
 </p>
 
-# Synopsis
+<p class="text-info">
+In addition to the taught sessions, you are expected to undertake independent
+and directed learning. This is a 20-credit module, for which the expected
+student workload is 200 hours. Over the course of 2 x 15-week semesters, you
+should be spending about 5 hours per week on this module <em>in addition to</em> 
+the time you spend in lectures and lab/seminar classes.
+</p>
+
+## Synopsis
 
 The aim of this module is to develop a critical understanding of the
 engineering issues and principles of uni-processor and distributed embedded
@@ -72,38 +79,39 @@ On completion of this module, it is expected that students will be able to:
    construct solutions to these problems
 
 
-# Teaching Plan
+## Teaching Plan
 
 The following is a *provisional* guide to the organisation of this part of the
 module for this year. These arrangements are subject to change during the
 course of the module.
 
+### Semester 1 
 
-| Week   | W/c   | Lecture A   | Lecture B   | Practical   |
-| :----: | :---: | :---------: | :---------: | :---------: |
-**1** | 18-Sep &nbsp; | [Introduction. Key concepts: embedded, real-time, time-triggered, event-triggered.]({{site.raurl}}/A01.pdf) <br/> *Reading:* [PON10] Chp. 1, [KOP93] &nbsp; | [Scheduling, part 1]({{site.raurl}}/B01.pptx) <br/> *Reading:* See references in lecture notes &nbsp; | [Introduction/review of development tools and environment ]({{site.raurl}}/L01.pdf)
-**2** | 25-Sep &nbsp; | [Time-triggered foundations]({{site.raurl}}/A02.pdf) | [Scheduling, part 1, ctd.]({{site.raurl}}/B02.pptx) &nbsp; | [Scheduling practical 1]({{site.raurl}}/L02.pdf)
-**3** | 02-Oct &nbsp; | [Implementing and using a time-triggered scheduler]({{site.raurl}}/A03.pdf) &nbsp; | [Scheduling, part 1 (ctd)]({{site.raurl}}/B03.pptx) &nbsp; | [Time-triggered implementation.]({{site.raurl}}/L03.pdf)
-**4** | 09-Oct &nbsp; | [Pre-emptive scheduling. uC/OS-II review]({{site.raurl}}/A04.pdf) &nbsp; | [Scheduling, part 1 (ctd)]({{site.raurl}}/B04.pptx) &nbsp; | [Scheduling practical 2]({{site.raurl}}/L04.pdf)
-**5** | 16-Oct &nbsp; | [Event-driven systems]({{site.raurl}}/A05.pdf) &nbsp; | [Scheduling, part 2]({{site.raurl}}/B05.pptx) &nbsp; | [uC/OS-II lab]({{site.raurl}}/L05.pdf)
-**6** | 23-Oct &nbsp; | [Software execution time: measurement]({{site.raurl}}/A06.pdf) &nbsp; | [Scheduling, part 2 (ctd)]({{site.raurl}}/B06.pptx) &nbsp; | Scheduling practical 3 and 4 <br/> [[Lab (SP3)]({{site.raurl}}/L06a.pdf)][[Lab (SP4)]({{site.raurl}}/L06b.pdf)][[LabSIns.ods]({{site.raurl}}/LabSIns.ods)]
-**7** | 30-Oct &nbsp; | [Software execution time: analysis]({{site.raurl}}/A07.pdf) &nbsp; | [Reliability - concepts]({{site.raurl}}/B07.pdf) &nbsp; | [Software execution time calculation]({{site.raurl}}/L07.pdf)
-**8** | 06-Nov &nbsp; | [Distributed embedded systems; predictable communication networks; CAN]({{site.raurl}}/A08.pdf) &nbsp; | [Reliability concepts (ctd)]({{site.raurl}}/B08.pdf) &nbsp; | [Reliability concepts seminar]({{site.raurl}}/L08.pdf)
-**9** | 13-Nov &nbsp; | [CAN message response time analysis]({{site.raurl}}/A09.pdf) &nbsp; | [Software reliability]({{site.raurl}}/B09.pdf) &nbsp; | [CAN practical]({{site.raurl}}/L09.pdf)
-**10** | 20-Nov &nbsp; | [Modelling and analysis of a distributed CAN-based system]({{site.raurl}}/A10.pdf) &nbsp; | [Software reliability (ctd)]({{site.raurl}}/B10a.pdf) [Distributed reliability]({{site.raurl}}/B10b.pdf)&nbsp; | Software reliability practical <br/> [[Lab]({{site.raurl}}/L10.pdf)] [[SensorSimulation.zip]({{site.raurl}}/SensorSimulation.zip)]
-**11** | 27-Nov &nbsp; | [Modelling and analysis of a distributed CAN-based system]({{site.raurl}}/A11.pdf) &nbsp; | [Processors and Hardware Reliability]({{site.raurl}}/B11.pdf) &nbsp; | Assignment support
-**12** | 04_Dec &nbsp; | [Methods, standards and tools: Agile, MISRA, VCS]({{site.raurl}}/A12.pdf) &nbsp; | [Processors and Hardware Reliability (ctd)]({{site.raurl}}/B12.pdf) &nbsp; | [Software reliability practical (ctd)]({{site.raurl}}/L12.pdf)
+| Week   | W/c   | Lecture   |  Practical  |
+| :----: | :---: | :-------: | :---------: | 
+**1** | 01-Oct &nbsp; | [Introduction]({{site.baseurl}}{{site.raurl}}/A01.pdf) <br/> *Reading:* [LS17], chapter 1 &nbsp; | [Introduction to hardware and software development tools](L01.html)
+**2** | 08-Oct &nbsp; | [Interrupt handling. Timers]({{site.baseurl}}{{site.raurl}}/A02.pdf) | [Configuring a timer and handling its interrupt](L02.html)
+**3** | 15-Oct &nbsp; | [Static scheduling: theory]({{site.baseurl}}{{site.raurl}}/A03.pdf) | [Mbed SDK and application shield](L03.html)
+**4** | 22-Oct &nbsp; | [Static scheduling: practice]({{site.baseurl}}{{site.raurl}}/A04.pdf) &nbsp; | [Time-triggered scheduler implementation and application]({{site.baseurl}}{{site.raurl}}/L04.pdf)
+**5** | 29-Oct &nbsp; | [Fixed priority preemptive scheduling]({{site.baseurl}}{{site.raurl}}/A05.pdf) &nbsp; | [Response time analysis]({{site.baseurl}}{{site.raurl}}/L05.pdf)
+**6** | 05-Nov &nbsp; | [A preemptive RTOS: uC/OS-II]({{site.baseurl}}{{site.raurl}}/A06.pdf) &nbsp; | [uC/OS-II lab 1]({{site.baseurl}}{{site.raurl}}/L06.pdf)
+**7** | 12-Nov &nbsp; | [Event-driven systems - Samek]({{site.baseurl}}{{site.raurl}}/A07.pdf) &nbsp; | [uC/OS-II lab 2]({{site.baseurl}}{{site.raurl}}/L07.pdf)
+**8** | 19-Nov &nbsp; | [Event-driven systems - Mbed OS 5]({{site.baseurl}}{{site.raurl}}/A08.pdf) &nbsp; | [OS 5 lab]({{site.baseurl}}{{site.raurl}}/L08.pdf)
+**9** | 26-Nov &nbsp; | [Software execution time: measurement]({{site.baseurl}}{{site.raurl}}/A09.pdf) &nbsp; | [Software execution time measurement lab]({{site.baseurl}}{{site.raurl}}/L09.pdf)
+**10** | 03-Dec  &nbsp; | [Software execution time: analysis]({{site.baseurl}}{{site.raurl}}/A10.pdf) &nbsp; | [Software execution time analysis lab]({{site.baseurl}}{{site.raurl}}/L10.pdf)
+**11** | 10-Dec &nbsp; | [Advanced scheduling methods 1]({{site.baseurl}}{{site.raurl}}/A11.pdf) &nbsp; | [Small embedded project]({{site.baseurl}}{{site.raurl}}/L11.pdf)
+**12** | 17-Dec &nbsp; | [Advanced scheduling methods 2]({{site.baseurl}}{{site.raurl}}/A12.pdf) &nbsp; | [Small embedded project (ctd)]({{site.baseurl}}{{site.raurl}}/L12.pdf)
+
+### Semester 2
+
+<p>
+Details of the teaching for semester 2 will appear after the Winter break.
+</p>
 
 <br/>
 
-<p class="text-info">
-In addition to the taught sessions, you are expected to undertake independent
-and directed learning. This is a 20-credit module, for which the expected
-student workload is 200 hours. Over the course of a 15-week semester, you
-should be spending about 13 hours per week on this module.
-</p>
 
-# Assessment
+## Assessment
 
 Summative assessment comprises:
 
@@ -122,9 +130,11 @@ laboratory sessions. Additionally email will be used
 for more formal feedback on summative assessment.
 
 
-<a class="btn btn-large btn-primary" href="{{site.raurl}}/CM605Portfolio.pdf"><i class="icon-upload-alt"></i>Download Assignment Specification</a>
+<a class="btn btn-large btn-primary" href="{{site.baseurl}}{{site.raurl}}/CM605Portfolio.pdf"><i class="icon-upload-alt"></i>Download Assignment Specification</a>
 
-# Recommended Reading
+
+## Recommended Reading
+
 <p><strong>Books</strong></p>
 
 <ul>
@@ -158,12 +168,12 @@ Goetz, B., Java Concurrency in Practice, Addison Wesley, 2006.
 
 
 <li><strong>[LAB02]</strong>
-Labrosse, J.,<a href="{{site.raurl}}/100-uC-OS-II-003.pdf">MicroC/OS II</a>, 2nd Ed, CMP Books, 2002
+Labrosse, J.,<a href="{{site.baseurl}}{{site.raurl}}/100-uC-OS-II-003.pdf">MicroC/OS II</a>, 2nd Ed, CMP Books, 2002
 </li>
 
 
-<li><strong>[LS11]</strong>
-<a href="http://LeeSeshia.org"> Introduction to Embedded Systems, A Cyber-Physical Systems Approach</a>, http://LeeSeshia.org, ISBN 978-0-557-70857-4, 2011.
+<li><strong>[LS17]</strong>
+<a href="http://LeeSeshia.org"> Introduction to Embedded Systems, A Cyber-Physical Systems Approach</a> (<a href="{{site.baseurl}}{{site.raurl}}/LeeSeshia_DigitalV2_2.pdf">Local copy</a>), 2nd edition, http://LeeSeshia.org, ISBN 978-0-557-70857-4, 2011.
 <br/>A free text book by Edward A. Lee and Sanjit A. Seshia that provides a modern introduction to embedded systems.
 </li>
 
@@ -171,109 +181,141 @@ Labrosse, J.,<a href="{{site.raurl}}/100-uC-OS-II-003.pdf">MicroC/OS II</a>, 2nd
 <li><strong>[PON10]</strong>
 <a href="http://www.tte-systems.com/books/pttes">Patterns for
 time-triggered embedded systems</a>
-(<a href="{{site.raurl}}/pttes.pdf">Local copy</a>)A free text book
+(<a href="{{site.baseurl}}{{site.raurl}}/pttes.pdf">Local copy</a>)A free text book
 by Michael Pont that gives a comprehensive coverage of a variety of
 time-triggered patterns for the 8051 processor. The patterns are
 clearly described and easy to adapt to other processors.
 </li>
 
 <li><strong>[DOW08]</strong>
-<a href="http://www.greenteapress.com/semaphores/">The Little Book of Semaphores</a> (<a href="{{site.raurl}}/downey08semaphores.pdf">Local copy</a>) A free
+<a href="http://www.greenteapress.com/semaphores/">The Little Book of Semaphores</a> (<a href="{{site.baseurl}}{{site.raurl}}/downey08semaphores.pdf">Local copy</a>) A free
 text book by Allen Downey that introduces a variety of interesting synchronisation problems and their solution using semaphores.
 </li>
 
+<li> <strong>[MAR13]</strong>
+Martin, T. <a href="https://librarysearch.northumbria.ac.uk/primo_library/libweb/action/display.do?tabs=detailsTab&ct=display&fn=search&doc=44UON_ALMA5137082930003181&indx=3&recIds=44UON_ALMA5137082930003181&recIdxs=2&elementId=2&renderMode=poppedOut&displayMode=full&frbrVersion=3&frbg=&pcAvailabiltyMode=false&&dscnt=0&scp.scps=scope%3A%2844UON_ALMA%29%2CEbscoLocal_44UON%2Cprimo_central_multiple_fe&mode=Basic&vid=northumbria&srt=rank&tab=default_tab&dum=true&vl(freeText0)=trevor%20martin%20cortex%20m&dstmp=1475445940996">The Designer's Guide to the Cortex-M Processor Family: A Tutorial Approach</a>, Newnes, 2013
+</li>
+
+<li><strong>[YIU13]</strong> Yiu, J., <a href="http://www.amazon.co.uk/Definitive-Guide-Cortex-M3-Cortex-M4-Processors/dp/0124080820/ref=tmm_pap_title_0?ie=UTF8&qid=1435999633&sr=1-1">,The Definitive Guide to the Cortex-M3 and Cortex-M4 Processors</a>, Newnes, 2013
+</li>
 </ul>
 
 <p><strong>Papers</strong></p>
 <ul>
 <li><strong>[DBB07]</strong> Davis, R. et al.,
 Controller Area Network (CAN) schedulability analysis: Refuted, revisited and revised, Journal of Real-time Systems, 35:239-272, 2007
-[<a href="{{site.rraurl}}/dbb07.pdf">PDF</a>]
+[<a href="{{site.baseurl}}{{site.raurl}}/dbb07.pdf">PDF</a>]
 </li>
 
 <li><strong>[KOP93]</strong> Kopetz, H. <em>Should responsive systems be event-triggered or time-triggered?</em>, RR 16/93, TUW, Vienna, 1993
-[<a href="{{site.rraurl}}/kop93.pdf">PDF</a>]
+[<a href="{{site.baseurl}}{{site.raurl}}/kop93.pdf">PDF</a>]
 </li>
 </ul>
 
-# Resources
+## Resources
 
-<p><strong>Response time and scheduling calculator</strong></p>
-<ul>
-<li><a href="{{site.raurl}}/RespTime.jar">RespTime.jar</a> and <a href="{{site.raurl}}/RespTime.Readme.pdf">manual</a> and <a href="{{site.raurl}}/data.txt">data.txt</a></li>
-<li><a href="{{site.raurl}}/RespTime.src.zip">Source files FYI</a></li>
-</ul>
-
-<p><strong>IAR</strong></p>
+<p><strong>FRDM-K64F and Application Shield</strong></p>
 <ul>
 <li>
-<a href="{{site.raurl}}/EWARM_UserGuide.ENU.pdf">Embedded Workbench User Guide</a>
+<a href="{{site.baseurl}}{{site.raurl}}/DUI0553A_cortex_m4_dgug.pdf">ARM Cortex M4 Generic User Guide</a>
 </li>
 <li>
-<a href="{{site.raurl}}/EWARM_DevelopmentGuide.ENU.pdf">C/C++ Development Guide</a>
+<a href="{{site.baseurl}}{{site.raurl}}/DDI0439B_cortex_m4_r0p0_trm.pdf">ARM Cortex M4 Technical Reference Manual</a>
 </li>
 <li>
-<a href="{{site.raurl}}/">uCOS-II-CSPY User Guide</a>
+<a href="https://os.mbed.com/platforms/FRDM-K64F/">FRDM-K64F | Mbed</a>
+</li>
+<li>
+<a href="https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/k-seriesperformancem4/k2x-usb/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F">FRDM-K64F at NXP</a>
+</li>
+<li>
+<a href="{{site.baseurl}}{{site.raurl}}/FRDMK64FUG.pdf">FRDM-K64F User Guide</a>
+</li>
+<li>
+<a href="{{site.baseurl}}{{site.raurl}}/K64P144M120SF5RM.pdf">K64 Processor Sub-Family Reference Manual</a>
+</li>
+<li>
+<a href="{{site.baseurl}}{{site.raurl}}/FRDM-K64F-SCH-E4.pdf">FRDM-K64F Board Schematic</a>
+</li>
+<li>
+<a href="{{site.baseurl}}{{site.raurl}}/FRDM-K64F_PKG_pins.pdf">FRDM-K64F pins</a>
+</li>
+<li>
+<a href="https://os.mbed.com/components/mbed-Application-Shield/">Mbed Application Shield</a>
+</li>
+<li>
+<a href="{{site.baseurl}}{{site.raurl}}/ApplicationShield%20V_1_0_0%20SCH.pdf">Mbed Application Shield Schematic</a>
 </li>
 </ul>
 
+<p><strong>Software Development Tools</strong></p>
+<ul>
+<li>
+<a href="https://os.mbed.com/docs/v5.9/tools/index.html">Arm Mbed Tools</a>
+</li>
+<li>
+<a href="https://os.mbed.com/docs/v5.9/tools/arm-mbed-cli.html">Arm Mbed CLI</a>
+</li>
+<li>
+<a href="https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads">GNU Arm Embedded Toolchain</a>
+</li>
+<li>
+<a href="https://github.com/mbedmicro/pyOCD">Debugging with pyOCD</a>
+</li>
+<li>
+<a href="https://developer.arm.com/embedded/cmsis">CMSIS - Cortex Microcontroller Software Interface Standard</a>
+</li>
+<li>
+<a href="https://github.com/ARMmbed/mbed-os">Arm Mbed OS</a>
+</li>
+</ul>
 
 <p><strong>Micrium (<a href="http://micrium.com">site</a>)</strong></p>
 <ul>
 <li>
-<a href="{{site.raurl}}/ucosii_datasheet.pdf">uC/OS-II Datasheet</a>
+<a href="http://localhost:4000/kf6010/assets/ra/100-uC-OS-II-003.pdf">uC/OS-II</a>
 </li>
 <li>
-<a href="{{site.raurl}}/QuickRefChart-Color.pdf">uC/OS-II Quick Reference Chart</a>
+<a href="{{site.baseurl}}{{site.raurl}}/ucosii_datasheet.pdf">uC/OS-II Datasheet</a>
 </li>
 <li>
-<a href="{{site.raurl}}/uCOS-II-RefMan.pdf">uC/OS-II Reference Manual</a>
+<a href="{{site.baseurl}}{{site.raurl}}/QuickRefChart-Color.pdf">uC/OS-II Quick Reference Chart</a>
 </li>
 <li>
-<a href="{{site.raurl}}/uCOS-II-CfgMan.pdf">uC/OS-II Configuration Manual</a>
+<a href="{{site.baseurl}}{{site.raurl}}/uCOS-II-RefMan.pdf">uC/OS-II Reference Manual</a>
 </li>
 <li>
-<a href="{{site.raurl}}/LPC2378_Micrium_Readme.pdf">Readme for uC/OS-II
-on LPC2378</a>
-</li>
-<li>
-<a href="{{site.raurl}}/AN-1077.pdf">Application note for uC/OS-II
-on LPC2378</a>
+<a href="{{site.baseurl}}{{site.raurl}}/uCOS-II-CfgMan.pdf">uC/OS-II Configuration Manual</a>
 </li>
 </ul>
 
-
-<p><strong>LPC2378</strong></p>
-<ul>
-<li>
-<a href="https://www.olimex.com/Products/ARM/NXP/LPC2378-STK/">Olimex LPC2378-STK</a>
-Documentation for the Olimex development prototype board
-</li>
-<li>
-<a href="{{site.raurl}}/LPC2377_78.pdf">LPC2377_78 Product Specification</a>
-(<a href="http://www.nxp.com/#/pip/pip=[pip=LPC2377_78]|pp=[t=pip,i=LPC2377_78]">external</a>)
-</li>
-<li>
-<a href="{{site.raurl}}/user.manual.lpc23xx.pdf">LPC23xx User Manual</a>
-(<a href="http://ics.nxp.com/support/documents/microcontrollers/pdf/user.manual.lpc23xx.pdf">external</a>)
-</li>
-<li>
-<a href="{{site.raurl}}/lpc2300_book_v2_srn.pdf">The Insider's Guide to the NXP LPC2300/2400 based Microcontrollers</a>
-</li>
-<li>
-<a href="{{site.raurl}}/ES_LPC2378.pdf">LPC2378 Errata Sheet</a>
-(<a href="http://www.nxp.com/documents/errata_sheet/ES_LPC2378.pdf">external</a>)
-</li>
-
-</ul>
+* **Programming in C**
+  - **[KOC04]** Kochan, S., [Programming in C](http://www.amazon.co.uk/Programming-Developers-Library-Stephen-Kochan/dp/0672326663/ref=sr_1_5?ie=UTF8&amp;qid=1316089219&amp;sr=8-5), Sams, 2004 <br/>
+A gentle introduction to programming in C. I think it's a better starting
+point than the much-recommended Kernighan and Ritchie.
+  - **[PRI02]** Prinz, P., [C Pocket Reference](http://www.amazon.co.uk/C-Pocket-Reference-Peter-Prinz/dp/0596004362/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1285570456&amp;sr=1-1), O'Reilly, 2002 <br/>
+A concise C reference. Very cheap. Less than a fiver the last time I
+looked. I suggest you buy a copy and read it from cover to cover.
+  - **[BBD91]**  Banahan, M., Brady, D.  and Doran, M., [The C Book](http://publications.gbdirect.co.uk/c_book/) ([local copy]({{site.baseurl}}{{site.raurl}}/thecbook.pdf)), Currently out of print, 1991. <br/>
+Although this book is no longer in print, it remains a good introduction to the C language.
+There's a [free pdf version](http://publications.gbdirect.co.uk/c_book/thecbook.pdf)
+available ([local copy]({{site.baseurl}}{{site.raurl}}/thecbook.pdf)).
+  - [Essential C](http://cslibrary.stanford.edu/101/EssentialC.pdf), Parlante, N, Stanford University, 2003 <br/>
+A very good summary of the basic features of the C language.
+  - [Learn C Programming](http://tutorialspoint.com/cprogramming/) <br/> A nice online C programming tutorial site.
+  - [C Programming](http://www.imada.sdu.dk/~svalle/courses/dm14-2005/mirror/c/) <br/>
+An online course on C Programming from the University of Strathclyde.
+  - [Practical Programming in C](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-087-practical-programming-in-c-january-iap-2010/index.htm) <br/> A detailed introduction to C from the MIT Open Courseware catalogue. If you skip the material on data structures and concurrency, you're left
+with a good basic introduction to C. The data structures and concurrency
+sections cover more advanced material.
 
 <p> <strong>Embedded C Programming</strong></p>
 <ul>
 <li>
-<a href="{{site.raurl}}/nasa-c-style.pdf">NASA C Coding Standard</a>
+<a href="{{site.baseurl}}{{site.raurl}}/nasa-c-style.pdf">NASA C Coding Standard</a>
 </li>
 <li>
-<a href="{{site.raurl}}/power_of_ten.pdf">The Power of 10 - Rules for Developing Safety Critical Code</a>
+<a href="{{site.baseurl}}{{site.raurl}}/power_of_ten.pdf">The Power of 10 - Rules for Developing Safety Critical Code</a>
 </li>
 <li>
 <a href="https://www.misra.org.uk/MISRAHome/MISRAC2012/tabid/196/Default.aspx">MISRA C Standard: 2012</a>
@@ -307,6 +349,22 @@ Documentation for the Olimex development prototype board
 </li>
 </ul>
 
+* **Git**
+  - [Git home page](https://git-scm.com)
+  - [Git official documentation](https://git-scm.com/doc)
+  - [Good resources for learning Git and Github](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
+  - [15-minute tutorial in your browser](https://try.github.io)
+  - [Video introduction](https://git-scm.com/videos)
+  - [Student developer pack](https://education.github.com/pack) <br/> Get free
+  stuff from GitHub Education, including a GitHub account with unlimited
+  private repositories (normally 7$/month)
+
+<p><strong>Response time and scheduling calculator</strong></p>
+<ul>
+<li><a href="{{site.baseurl}}{{site.raurl}}/RespTime.jar">RespTime.jar</a> and <a href="{{site.baseurl}}{{site.raurl}}/RespTime.Readme.pdf">manual</a> and <a href="{{site.baseurl}}{{site.raurl}}/data.txt">data.txt</a></li>
+<li><a href="{{site.baseurl}}{{site.raurl}}/RespTime.src.zip">Source files FYI</a></li>
+</ul>
+
 <p> <strong>Miscellaneous</strong></p>
 <ul>
 <li><a href="http://www.eetimes.com/design/embedded">EE Times</a>
@@ -320,6 +378,7 @@ a variety of experts on embedded software.
 <li><a href="http://blog.feabhas.com/">Sticky Bits</a> Niall Cooling's blog
 on developing software for real-time and embedded systems.
 </li>
+<li><a href="https://www.safetty.net/">SafeTTy Systems</a>
 </ul>
 
 

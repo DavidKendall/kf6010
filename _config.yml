@@ -6,37 +6,55 @@ kramdown:
   auto_ids: true
   syntax_highlighter: rouge
 
-title: CM0605
-subtitle: Embedded systems engineering
-authors: Michael Brockway, David Kendall
-copyyear: 2015-2017
-#url: http://hesabu.net/cm0605
-raurl: assets/ra
-rraurl: assets/ra
+title: KF6010
+subtitle: Distributed Real-Time Systems
+authors: David Kendall, Alun Moon
+copyyear: 2018
+url: http://hesabu.net
+baseurl: /kf6010
+raurl: /assets/ra
+rraurl: /assets/ra
 #url: http://localhost:4000
 #raurl: http://localhost:4000/assets/ra
 
 lab_links:
-  - title: Lab 1 - ISR, Timers
-    url: assets/ra/L01.pdf
-    rep: cm0605_lab01
-  - title: Lab 3 - Time-triggered scheduler
-    url: assets/ra/L03.pdf
-    rep: cm0605_lab03
-  - title: Lab 5 - uCOS-II
-    url: assets/ra/L05.pdf
-    rep: cm0605_lab05
-  - title: Lab 7 - Measuring software execution time
-    url: assets/ra/L07.pdf
-    rep: cm0605_lab07
-  - title: Lab 9 - Controller Area Network (CAN)
-    url: assets/ra/L09.pdf
-    rep: cm0605_lab09
- 
+   - title: Lab 1 
+     url: L01.html
+     #rep: blinky
+   - title: Lab 2 
+     url: L02.html
+     #rep: blinky
+   - title: Lab 3 
+     url: L03.html
+     #rep: buttons
+   - title: Lab 4 
+     url: L04.html
+     #rep: interrupt
+   - title: Lab 5 
+     url: L05.html
+     #rep: tasks
+   - title: Lab 6 
+     url: L06.html
+     #rep: peterson
+   - title: Lab 7 
+     url: L07.html
+     #rep: semaphore
+   - title: Lab 8 
+     url: L08.html
+     #rep: ringbuffer
+   - title: Lab 9 
+     url: L09.html
+     #rep: deadlock
+   - title: Lab 10 
+     url: L10.html
+     #rep: blinky
+   - title: Lab 11 
+     url: L11.html
+     #rep: blinky
+
 
 right_links:
   - title: View on GitHub
-    url: https://github.com/davidkendall/cm0605_www
+    url: https://github.com/davidkendall/kf4005
 
-repo: https://github.com/davidkendall/cm0605
-
+repo: https://github.com/davidkendall/kf6010
