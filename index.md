@@ -32,7 +32,7 @@ students to put these ideas into practice in a variety of exercises.
 |---|:---|
 |Module Tutor &nbsp;  | [Alun Moon](http://computing.northumbria.ac.uk/staff/cgam1)|
 |Lecturer      | [David Kendall](http://computing.northumbria.ac.uk/staff/cgdk2)
-
+|Lecturer      | [Nanlin Jin](https://www.northumbria.ac.uk/about-us/our-staff/j/nanlin-jin/)
 
 ## Teaching Arrangements
 
@@ -92,15 +92,15 @@ course of the module.
 **1** | 01-Oct &nbsp; | [Introduction]({{site.baseurl}}{{site.raurl}}/A01.pdf) <br/> *Reading:* [LS17], chapter 1 &nbsp; | [Introduction to hardware and software development tools](L01.html)
 **2** | 08-Oct &nbsp; | [Interrupt handling. Timers]({{site.baseurl}}{{site.raurl}}/A02.pdf) | [Configuring a timer and handling its interrupt](L02.html)
 **3** | 15-Oct &nbsp; | [Static scheduling: theory]({{site.baseurl}}{{site.raurl}}/A03.pdf) | [Mbed SDK and application shield](L03.html)
-**4** | 22-Oct &nbsp; | [Static scheduling: practice]({{site.baseurl}}{{site.raurl}}/A04.pdf) &nbsp; | [Time-triggered scheduler implementation and application]({{site.baseurl}}{{site.raurl}}/L04.pdf)
-**5** | 29-Oct &nbsp; | [Fixed priority preemptive scheduling]({{site.baseurl}}{{site.raurl}}/A05.pdf) &nbsp; | [Response time analysis]({{site.baseurl}}{{site.raurl}}/L05.pdf)
-**6** | 05-Nov &nbsp; | [A preemptive RTOS: uC/OS-II]({{site.baseurl}}{{site.raurl}}/A06.pdf) &nbsp; | [uC/OS-II lab 1]({{site.baseurl}}{{site.raurl}}/L06.pdf)
-**7** | 12-Nov &nbsp; | [Event-driven systems - Samek]({{site.baseurl}}{{site.raurl}}/A07.pdf) &nbsp; | [uC/OS-II lab 2]({{site.baseurl}}{{site.raurl}}/L07.pdf)
-**8** | 19-Nov &nbsp; | [Event-driven systems - Mbed OS 5]({{site.baseurl}}{{site.raurl}}/A08.pdf) &nbsp; | [OS 5 lab]({{site.baseurl}}{{site.raurl}}/L08.pdf)
-**9** | 26-Nov &nbsp; | [Software execution time: measurement]({{site.baseurl}}{{site.raurl}}/A09.pdf) &nbsp; | [Software execution time measurement lab]({{site.baseurl}}{{site.raurl}}/L09.pdf)
-**10** | 03-Dec  &nbsp; | [Software execution time: analysis]({{site.baseurl}}{{site.raurl}}/A10.pdf) &nbsp; | [Software execution time analysis lab]({{site.baseurl}}{{site.raurl}}/L10.pdf)
-**11** | 10-Dec &nbsp; | [Advanced scheduling methods 1]({{site.baseurl}}{{site.raurl}}/A11.pdf) &nbsp; | [Small embedded project]({{site.baseurl}}{{site.raurl}}/L11.pdf)
-**12** | 17-Dec &nbsp; | [Advanced scheduling methods 2]({{site.baseurl}}{{site.raurl}}/A12.pdf) &nbsp; | [Small embedded project (ctd)]({{site.baseurl}}{{site.raurl}}/L12.pdf)
+**4** | 22-Oct &nbsp; | [Static scheduling: practice]({{site.baseurl}}{{site.raurl}}/A04.pdf) &nbsp; | [Time-triggered scheduler implementation and application](L04.html)
+**5** | 29-Oct &nbsp; | [Fixed priority preemptive scheduling]({{site.baseurl}}{{site.raurl}}/A05.pdf) &nbsp; | [Response time analysis](L05.html)
+**6** | 05-Nov &nbsp; | [A preemptive RTOS: uC/OS-II]({{site.baseurl}}{{site.raurl}}/A06.pdf) &nbsp; | [uC/OS-II lab 1](L06.html)
+**7** | 12-Nov &nbsp; | [Event-driven systems - Samek]({{site.baseurl}}{{site.raurl}}/A07.pdf) &nbsp; | [uC/OS-II lab 2](L07.html)
+**8** | 19-Nov &nbsp; | [Event-driven systems - Mbed OS 5]({{site.baseurl}}{{site.raurl}}/A08.pdf) &nbsp; | [OS 5 lab](L08.html)
+**9** | 26-Nov &nbsp; | [Software execution time: measurement]({{site.baseurl}}{{site.raurl}}/A09.pdf) &nbsp; | [Software execution time measurement lab](L09.html)
+**10** | 03-Dec  &nbsp; | [Software execution time: analysis]({{site.baseurl}}{{site.raurl}}/A10.pdf) &nbsp; | [Software execution time analysis lab](L10.html)
+**11** | 10-Dec &nbsp; | [Advanced scheduling methods 1]({{site.baseurl}}{{site.raurl}}/A11.pdf) &nbsp; | [Small embedded project](L11.html)
+**12** | 17-Dec &nbsp; | [Advanced scheduling methods 2]({{site.baseurl}}{{site.raurl}}/A12.pdf) &nbsp; | [Small embedded project (ctd)](L12.html)
 
 ### Semester 2
 
