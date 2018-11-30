@@ -95,7 +95,7 @@ course of the module.
 **4** | 22-Oct &nbsp; | [Static scheduling: practice]({{site.baseurl}}{{site.raurl}}/A04.pdf) &nbsp; | [Time-triggered scheduler implementation and application](L04.html)
 **5** | 29-Oct &nbsp; | [Fixed priority preemptive scheduling]({{site.baseurl}}{{site.raurl}}/A05.pdf) &nbsp; | [Response time analysis](L05.html)
 **6** | 05-Nov &nbsp; | [A preemptive RTOS: uC/OS-II]({{site.baseurl}}{{site.raurl}}/A06.pdf) &nbsp; | [uC/OS-II lab 1](L06.html)
-**7** | 12-Nov &nbsp; | [Event-driven systems - Samek]({{site.baseurl}}{{site.raurl}}/A07.pdf) &nbsp; | [uC/OS-II lab 2](L07.html)
+**7** | 12-Nov &nbsp; | [uC/OS-II: semaphores]({{site.baseurl}}{{site.raurl}}/A07.pdf) &nbsp; | [uC/OS-II lab 2](L07.html)
 **8** | 19-Nov &nbsp; | [Event-driven systems - Mbed OS 5]({{site.baseurl}}{{site.raurl}}/A08.pdf) &nbsp; | [OS 5 lab](L08.html)
 **9** | 26-Nov &nbsp; | [Software execution time: measurement]({{site.baseurl}}{{site.raurl}}/A09.pdf) &nbsp; | [Software execution time measurement lab](L09.html)
 **10** | 03-Dec  &nbsp; | [Software execution time: analysis]({{site.baseurl}}{{site.raurl}}/A10.pdf) &nbsp; | [Software execution time analysis lab](L10.html)
@@ -116,7 +116,7 @@ Details of the teaching for semester 2 will appear after the Winter break.
 Summative assessment comprises:
 
   * A portfolio of work relating to the syllabus topics, carried out over the
-semester and submitted in week 12. Typically one exercise per major topic
+2nd semester and submitted in week 12 of the 2nd semester. Typically one exercise per major topic
 which may involve: a small research activity, programming, or a pen and
 paper exercise as appropriate. This is a single assessment, contributing 100% of the
 module mark.
@@ -130,7 +130,7 @@ laboratory sessions. Additionally email will be used
 for more formal feedback on summative assessment.
 
 
-<a class="btn btn-large btn-primary" href="{{site.baseurl}}{{site.raurl}}/CM605Portfolio.pdf"><i class="icon-upload-alt"></i>Download Assignment Specification</a>
+<!--<a class="btn btn-large btn-primary" href="{{site.baseurl}}{{site.raurl}}/CM605Portfolio.pdf"><i class="icon-upload-alt"></i>Download Assignment Specification</a>-->
 
 
 ## Recommended Reading
