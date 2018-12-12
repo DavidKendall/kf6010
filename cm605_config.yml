@@ -6,12 +6,12 @@ kramdown:
   auto_ids: true
   syntax_highlighter: rouge
 
-title: KF6010
-subtitle: Distributed real-time systems
+title: CM0605
+subtitle: Embedded Systems Engineering
 authors: David Kendall, Alun Moon
 copyyear: 2018
 url: http://hesabu.net
-baseurl: /kf6010
+baseurl: /cm0605
 raurl: /assets/ra
 rraurl: /assets/ra
 #url: http://localhost:4000

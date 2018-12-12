@@ -98,8 +98,8 @@ course of the module.
 **7** | 12-Nov &nbsp; | [uC/OS-II: semaphores]({{site.baseurl}}{{site.raurl}}/A07.pdf) &nbsp; | [uC/OS-II lab 2](L07.html)
 **8** | 19-Nov &nbsp; | [Event-driven systems - Mbed OS 5]({{site.baseurl}}{{site.raurl}}/A08.pdf) &nbsp; | [OS 5 lab](L08.html)
 **9** | 26-Nov &nbsp; | [Software execution time: measurement]({{site.baseurl}}{{site.raurl}}/A09.pdf) &nbsp; | [Software execution time measurement lab](L09.html)
-**10** | 03-Dec  &nbsp; | [Software execution time: analysis]({{site.baseurl}}{{site.raurl}}/A10.pdf) &nbsp; | [Software execution time analysis lab](L10.html)
-**11** | 10-Dec &nbsp; | [Advanced scheduling methods 1]({{site.baseurl}}{{site.raurl}}/A11.pdf) &nbsp; | [Small embedded project](L11.html)
+**10** | 03-Dec  &nbsp; | [Software execution time: analysis]({{site.baseurl}}{{site.raurl}}/A10.pdf) &nbsp; | [Software execution time measurement and analysis lab](L10.html)
+**11** | 10-Dec &nbsp; | [Advanced scheduling methods 1]({{site.baseurl}}{{site.raurl}}/A11.pdf) &nbsp; | [Small embedded project]({{site.baseurl}}{{site.raurl}}/L11.pdf)
 **12** | 17-Dec &nbsp; | [Advanced scheduling methods 2]({{site.baseurl}}{{site.raurl}}/A12.pdf) &nbsp; | [Small embedded project (ctd)](L12.html)
 
 ### Semester 2
