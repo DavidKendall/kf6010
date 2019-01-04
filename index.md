@@ -85,7 +85,7 @@ The following is a *provisional* guide to the organisation of this part of the
 module for this year. These arrangements are subject to change during the
 course of the module.
 
-### Semester 1 
+### Semester 1 - Single Processor Systems
 
 | Week   | W/c   | Lecture   |  Practical  |
 | :----: | :---: | :-------: | :---------: | 
@@ -99,14 +99,25 @@ course of the module.
 **8** | 19-Nov &nbsp; | [Event-driven systems - Mbed OS 5]({{site.baseurl}}{{site.raurl}}/A08.pdf) &nbsp; | [OS 5 lab](L08.html)
 **9** | 26-Nov &nbsp; | [Software execution time: measurement]({{site.baseurl}}{{site.raurl}}/A09.pdf) &nbsp; | [Software execution time measurement lab](L09.html)
 **10** | 03-Dec  &nbsp; | [Software execution time: analysis]({{site.baseurl}}{{site.raurl}}/A10.pdf) &nbsp; | [Software execution time measurement and analysis lab](L10.html)
-**11** | 10-Dec &nbsp; | [Advanced scheduling methods 1]({{site.baseurl}}{{site.raurl}}/A11.pdf) &nbsp; | [Small embedded project]({{site.baseurl}}{{site.raurl}}/L11.pdf)
-**12** | 17-Dec &nbsp; | [Advanced scheduling methods 2]({{site.baseurl}}{{site.raurl}}/A12.pdf) &nbsp; | [Small embedded project (ctd)](L12.html)
+**11** | 10-Dec &nbsp; | [Scheduling: blocking, priority inversion]({{site.baseurl}}{{site.raurl}}/A11.pdf) &nbsp; | [Small embedded project - specification]({{site.baseurl}}{{site.raurl}}/L11.pdf)
+**12** | 17-Dec &nbsp; | [Scheduling: blocking, priority inheritance, OCPP, ICPP]({{site.baseurl}}{{site.raurl}}/A12.pdf) &nbsp; | [Small embedded project - additional guidance]({{site.baseurl}}{{site.raurl}}/L12.pdf)
 
-### Semester 2
+### Semester 2 - Distributed Systems
 
-<p>
-Details of the teaching for semester 2 will appear after the Winter break.
-</p>
+| Week   | W/c   | Lecture   |  Practical  |
+| :----: | :---: | :-------: | :---------: | 
+**1** | 28-Jan &nbsp; | [Serial communication]({{site.baseurl}}{{site.raurl}}/B01.pdf) &nbsp; | [Serial communication - blocking](M01.html)
+**2** | 04-Feb &nbsp; | [Communication - The importance of predictability]({{site.baseurl}}{{site.raurl}}/B02.pdf) | [Serial communication - non-blocking](M02.html)
+**3** | 11-Feb &nbsp; | [Introduction to Controller Area Network]({{site.baseurl}}{{site.raurl}}/B03.pdf) | [Controller Area Network](M03.html)
+**4** | 18-Feb &nbsp; | [Controller Area Network - Message response Time Analysis]({{site.baseurl}}{{site.raurl}}/B04.pdf) &nbsp; | [Controller Area Network](M04.html)
+**5** | 25-Feb &nbsp; | [Introduction to Internet of Things]({{site.baseurl}}{{site.raurl}}/B05.pdf) &nbsp; | [IoT](M05.html)
+**6** | 04-Mar &nbsp; | [Internet of Things - Protocols and Security]({{site.baseurl}}{{site.raurl}}/B06.pdf) &nbsp; | [IoT](M06.html)
+**7** | 11-Mar &nbsp; | [Introduction to the LoRa mbed shield and sensors]({{site.baseurl}}{{site.raurl}}/B07.pdf) &nbsp; | [LoRaWAN](M07.html)
+**8** | 18-Mar &nbsp; | [Wireless communication principles]({{site.baseurl}}{{site.raurl}}/B08.pdf) &nbsp; | [LoraWAN](M08.html)
+**9** | 25-Mar &nbsp; | [Using LoRa in IoT applications]({{site.baseurl}}{{site.raurl}}/B09.pdf) &nbsp; | [LoRaWAN](M09.html)
+**10** | 01-Apr  &nbsp; | [System reliability - 1]({{site.baseurl}}{{site.raurl}}/B10.pdf) &nbsp; | [Reliability analysis](M10.html)
+**11** | 29-Apr &nbsp; | [System reliability - 2]({{site.baseurl}}{{site.raurl}}/B11.pdf) &nbsp; | [Reliability analysis](M11.html)
+**12** | 06-May &nbsp; | [Going further - multicore, the cloud, and fog]({{site.baseurl}}{{site.raurl}}/B12.pdf) &nbsp; | Assignment support
 
 <br/>
 
@@ -261,6 +272,9 @@ Controller Area Network (CAN) schedulability analysis: Refuted, revisited and re
 </li>
 <li>
 <a href="https://github.com/mbedmicro/pyOCD">Debugging with pyOCD</a>
+</li>
+<li>
+<a href="https://os.mbed.com/docs/latest/tutorials/debug-microbit.html">Debugging tutorial</a>
 </li>
 <li>
 <a href="https://developer.arm.com/embedded/cmsis">CMSIS - Cortex Microcontroller Software Interface Standard</a>
