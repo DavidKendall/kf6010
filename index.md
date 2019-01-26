@@ -106,12 +106,12 @@ course of the module.
 
 | Week   | W/c   | Lecture   |  Practical  |
 | :----: | :---: | :-------: | :---------: | 
-**1** | 28-Jan &nbsp; | [Serial communication]({{site.baseurl}}{{site.raurl}}/B01.pdf) &nbsp; | [Serial communication - blocking](M01.html)
-**2** | 04-Feb &nbsp; | [Communication - The importance of predictability]({{site.baseurl}}{{site.raurl}}/B02.pdf) | [Serial communication - non-blocking](M02.html)
-**3** | 11-Feb &nbsp; | [Introduction to Controller Area Network]({{site.baseurl}}{{site.raurl}}/B03.pdf) | [Controller Area Network](M03.html)
-**4** | 18-Feb &nbsp; | [Controller Area Network - Message response Time Analysis]({{site.baseurl}}{{site.raurl}}/B04.pdf) &nbsp; | [Controller Area Network](M04.html)
-**5** | 25-Feb &nbsp; | [Introduction to Internet of Things]({{site.baseurl}}{{site.raurl}}/B05.pdf) &nbsp; | [IoT](M05.html)
-**6** | 04-Mar &nbsp; | [Internet of Things - Protocols and Security]({{site.baseurl}}{{site.raurl}}/B06.pdf) &nbsp; | [IoT](M06.html)
+**1** | 28-Jan &nbsp; | [Serial communication]({{site.baseurl}}{{site.raurl}}/B01.pdf) &nbsp; | [Serial communication](M01.html)
+**2** | 04-Feb &nbsp; | [Introduction to Controller Area Network]({{site.baseurl}}{{site.raurl}}/B02.pdf)| [Serial communication](M02.html)
+**3** | 11-Feb &nbsp; |  [Controller Area Network - Message response Time Analysis]({{site.baseurl}}{{site.raurl}}/B03.pdf) | [Controller Area Network](M03.html)
+**4** | 18-Feb &nbsp; | [Introduction to Internet of Things]({{site.baseurl}}{{site.raurl}}/B04.pdf) &nbsp; | [Controller Area Network](M04.html)
+**5** | 25-Feb &nbsp; | [Internet of Things - Protocols and Security]({{site.baseurl}}{{site.raurl}}/B05.pdf) &nbsp; | [IoT](M05.html)
+**6** | 04-Mar &nbsp; | [Methods and Standards]({{site.baseurl}}{{site.raurl}}/B06.pdf) &nbsp; | [IoT](M06.html)
 **7** | 11-Mar &nbsp; | [Introduction to the LoRa mbed shield and sensors]({{site.baseurl}}{{site.raurl}}/B07.pdf) &nbsp; | [LoRaWAN](M07.html)
 **8** | 18-Mar &nbsp; | [Wireless communication principles]({{site.baseurl}}{{site.raurl}}/B08.pdf) &nbsp; | [LoraWAN](M08.html)
 **9** | 25-Mar &nbsp; | [Using LoRa in IoT applications]({{site.baseurl}}{{site.raurl}}/B09.pdf) &nbsp; | [LoRaWAN](M09.html)
@@ -277,6 +277,9 @@ Controller Area Network (CAN) schedulability analysis: Refuted, revisited and re
 <a href="https://os.mbed.com/docs/latest/tutorials/debug-microbit.html">Debugging tutorial</a>
 </li>
 <li>
+<a href="{{site.baseurl}}{{site.raurl}}/gdb-refcard.pdf">GDB Reference Card</a>
+</li>
+<li>
 <a href="https://developer.arm.com/embedded/cmsis">CMSIS - Cortex Microcontroller Software Interface Standard</a>
 </li>
 <li>
@@ -303,23 +306,23 @@ Controller Area Network (CAN) schedulability analysis: Refuted, revisited and re
 </li>
 </ul>
 
-* **Programming in C**
-  - **[KOC04]** Kochan, S., [Programming in C](http://www.amazon.co.uk/Programming-Developers-Library-Stephen-Kochan/dp/0672326663/ref=sr_1_5?ie=UTF8&amp;qid=1316089219&amp;sr=8-5), Sams, 2004 <br/>
+**Programming in C**
+- **[KOC04]** Kochan, S., [Programming in C](http://www.amazon.co.uk/Programming-Developers-Library-Stephen-Kochan/dp/0672326663/ref=sr_1_5?ie=UTF8&amp;qid=1316089219&amp;sr=8-5), Sams, 2004 <br/>
 A gentle introduction to programming in C. I think it's a better starting
 point than the much-recommended Kernighan and Ritchie.
-  - **[PRI02]** Prinz, P., [C Pocket Reference](http://www.amazon.co.uk/C-Pocket-Reference-Peter-Prinz/dp/0596004362/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1285570456&amp;sr=1-1), O'Reilly, 2002 <br/>
+- **[PRI02]** Prinz, P., [C Pocket Reference](http://www.amazon.co.uk/C-Pocket-Reference-Peter-Prinz/dp/0596004362/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1285570456&amp;sr=1-1), O'Reilly, 2002 <br/>
 A concise C reference. Very cheap. Less than a fiver the last time I
 looked. I suggest you buy a copy and read it from cover to cover.
-  - **[BBD91]**  Banahan, M., Brady, D.  and Doran, M., [The C Book](http://publications.gbdirect.co.uk/c_book/) ([local copy]({{site.baseurl}}{{site.raurl}}/thecbook.pdf)), Currently out of print, 1991. <br/>
+- **[BBD91]**  Banahan, M., Brady, D.  and Doran, M., [The C Book](http://publications.gbdirect.co.uk/c_book/) ([local copy]({{site.baseurl}}{{site.raurl}}/thecbook.pdf)), Currently out of print, 1991. <br/>
 Although this book is no longer in print, it remains a good introduction to the C language.
 There's a [free pdf version](http://publications.gbdirect.co.uk/c_book/thecbook.pdf)
 available ([local copy]({{site.baseurl}}{{site.raurl}}/thecbook.pdf)).
-  - [Essential C](http://cslibrary.stanford.edu/101/EssentialC.pdf), Parlante, N, Stanford University, 2003 <br/>
+- [Essential C](http://cslibrary.stanford.edu/101/EssentialC.pdf), Parlante, N, Stanford University, 2003 <br/>
 A very good summary of the basic features of the C language.
-  - [Learn C Programming](http://tutorialspoint.com/cprogramming/) <br/> A nice online C programming tutorial site.
-  - [C Programming](http://www.imada.sdu.dk/~svalle/courses/dm14-2005/mirror/c/) <br/>
+- [Learn C Programming](http://tutorialspoint.com/cprogramming/) <br/> A nice online C programming tutorial site.
+- [C Programming](http://www.imada.sdu.dk/~svalle/courses/dm14-2005/mirror/c/) <br/>
 An online course on C Programming from the University of Strathclyde.
-  - [Practical Programming in C](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-087-practical-programming-in-c-january-iap-2010/index.htm) <br/> A detailed introduction to C from the MIT Open Courseware catalogue. If you skip the material on data structures and concurrency, you're left
+- [Practical Programming in C](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-087-practical-programming-in-c-january-iap-2010/index.htm) <br/> A detailed introduction to C from the MIT Open Courseware catalogue. If you skip the material on data structures and concurrency, you're left
 with a good basic introduction to C. The data structures and concurrency
 sections cover more advanced material.
 
@@ -363,13 +366,13 @@ sections cover more advanced material.
 </li>
 </ul>
 
-* **Git**
-  - [Git home page](https://git-scm.com)
-  - [Git official documentation](https://git-scm.com/doc)
-  - [Good resources for learning Git and Github](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
-  - [15-minute tutorial in your browser](https://try.github.io)
-  - [Video introduction](https://git-scm.com/videos)
-  - [Student developer pack](https://education.github.com/pack) <br/> Get free
+**Git**
+- [Git home page](https://git-scm.com)
+- [Git official documentation](https://git-scm.com/doc)
+- [Good resources for learning Git and Github](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
+- [15-minute tutorial in your browser](https://try.github.io)
+- [Video introduction](https://git-scm.com/videos)
+- [Student developer pack](https://education.github.com/pack) <br/> Get free
   stuff from GitHub Education, including a GitHub account with unlimited
   private repositories (normally 7$/month)
 
