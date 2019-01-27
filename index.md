@@ -38,9 +38,8 @@ students to put these ideas into practice in a variety of exercises.
 
 |   |    |
 |---|:---|
-**Lecture** &nbsp;| Tue 13.00-14.00 ELA 003
-**Lab/Seminar**       | Thu 14.00-15.00  CIS 201 
-**Lab/Seminar**       | Fri 13.00-14.00 CIS 201 
+**Lecture** &nbsp;| Thu 11.00-12.00 ELA 102b
+**Lab/Seminar**       | Thu 13.00-14.00  CIS 201 
 
 <p class="text-info">
 You should attend the lecture session and <em>one</em>
