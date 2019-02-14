@@ -6,12 +6,12 @@ kramdown:
   auto_ids: true
   syntax_highlighter: rouge
 
-title: KF6010
-subtitle: Distributed real-time systems
+title: CM0605
+subtitle: Embedded Systems Engineering
 authors: David Kendall, Alun Moon
 copyyear: 2018
 url: http://hesabu.net
-baseurl: /kf6010
+baseurl: /cm0605
 raurl: /assets/ra
 rraurl: /assets/ra
 #url: http://localhost:4000
@@ -53,28 +53,6 @@ lab_links:
      #rep: blinky
    - title: Lab 12
      url: assets/ra/L12.pdf
-   - title: Lab 13
-     url: M01.html
-   - title: Lab 14
-     url: M02.html
-   - title: Lab 15
-     url: M03.html
-   - title: Lab 16
-     url: M04.html
-   - title: Lab 17
-     url: M05.html
-   - title: Lab 18
-     url: M06.html
-   - title: Lab 19
-     url: M07.html
-   - title: Lab 20
-     url: M08.html
-   - title: Lab 21
-     url: M09.html
-   - title: Lab 22
-     url: M10.html
-   - title: Lab 23
-     url: M11.html
 
 #right_links:
   #- title: View on GitHub

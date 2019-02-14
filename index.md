@@ -140,7 +140,7 @@ laboratory sessions. Additionally email will be used
 for more formal feedback on summative assessment.
 
 
-<!--<a class="btn btn-large btn-primary" href="{{site.baseurl}}{{site.raurl}}/CM605Portfolio.pdf"><i class="icon-upload-alt"></i>Download Assignment Specification</a>-->
+<a class="btn btn-large btn-primary" href="{{site.baseurl}}{{site.raurl}}/assgn.pdf"><i class="icon-upload-alt"></i>Download Assignment Specification</a>
 
 
 ## Recommended Reading
