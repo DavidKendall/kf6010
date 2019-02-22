@@ -49,10 +49,10 @@ lab_links:
      url: L10.html
      #rep: blinky
    - title: Lab 11 
-     url: L11.html
+     url: assets/ra/L11.pdf
      #rep: blinky
    - title: Lab 12
-     url: L12.html
+     url: assets/ra/L12.pdf
 
 #right_links:
   #- title: View on GitHub
