@@ -113,7 +113,7 @@ course of the module.
 **6** | 04-Mar &nbsp; | [Methods and Standards]({{site.baseurl}}{{site.raurl}}/B06.pdf) &nbsp; | [IoT](M06.html)
 **7**  | 11-Mar &nbsp; | [Introduction to the LoRa mbed shield and sensors]({{site.baseurl}}{{site.raurl}}/B07.pdf) &nbsp; | [LoRaWAN](M07.html)
 **8**  | 18-Mar &nbsp; | [System reliability - 1]({{site.baseurl}}{{site.raurl}}/B08.pdf) &nbsp; | [LoraWAN](M08.html)
-**9**  | 25-Mar &nbsp; | [System reliability - 2]({{site.baseurl}}{{site.raurl}}/B09.pdf) &nbsp; | [LoRaWAN](M09.html)
+**9**  | 25-Mar &nbsp; | [System reliability - 2]({{site.baseurl}}{{site.raurl}}/B09.pdf) &nbsp; | [N-version programming](M09.html)
 **10** | 01-Apr &nbsp; | [Wireless communication principles]({{site.baseurl}}{{site.raurl}}/B10.pdf) &nbsp; | [Reliability analysis](M10.html)
 **11** | 29-Apr &nbsp; | [Using LoRa in IoT applications]({{site.baseurl}}{{site.raurl}}/B11.pdf) &nbsp; | [Reliability analysis](M11.html)
 **12** | 06-May &nbsp; | [Going further - multicore, the cloud, and fog]({{site.baseurl}}{{site.raurl}}/B12.pdf) &nbsp; | Assignment support
