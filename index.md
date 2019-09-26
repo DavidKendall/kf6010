@@ -88,18 +88,18 @@ course of the module.
 
 | Week   | W/c   | Lecture   |  Practical  |
 | :----: | :---: | :-------: | :---------: | 
-**1** | 20-Sept  | [Introduction]({{site.baseurl}}{{site.raurl}}/A01.pdf) <br/> [Review IO hardware]({{site.baseurl}}{{site.raurl}}/A01a.pdf)<br/> *Reading:* [LS17], chapter 1  | [Introduction to hardware and software development tools](L01.html)
-**2** | 07-Oct  | [Interrupt handling. Timers]({{site.baseurl}}{{site.raurl}}/A02.pdf) | [Configuring a timer and handling its interrupt](L02.html)
-**3** | 14-Oct  | [Static scheduling: theory]({{site.baseurl}}{{site.raurl}}/A03.pdf) | [Mbed SDK and application shield](L03.html)
-**4** | 21-Oct  | [Static scheduling: practice]({{site.baseurl}}{{site.raurl}}/A04.pdf)  | [Time-triggered scheduler implementation and application](L04.html)
-**5** | 28-Oct  | [Fixed priority preemptive scheduling]({{site.baseurl}}{{site.raurl}}/A05.pdf)  | [Response time analysis](L05.html)
-**6** | 04-Nov  | [A preemptive RTOS: uC/OS-II]({{site.baseurl}}{{site.raurl}}/A06.pdf)  | [uC/OS-II lab 1](L06.html)
-**7** | 11-Nov  | [uC/OS-II: semaphores]({{site.baseurl}}{{site.raurl}}/A07.pdf)  | [uC/OS-II lab 2](L07.html)
-**8** | 18-Nov  | [Event-driven systems - Mbed OS 5]({{site.baseurl}}{{site.raurl}}/A08.pdf)  | [OS 5 lab](L08.html)
-**9** | 25-Nov  | [Software execution time: measurement]({{site.baseurl}}{{site.raurl}}/A09.pdf)  | [Software execution time measurement lab](L09.html)
-**10** | 02-Dec   | [Software execution time: analysis]({{site.baseurl}}{{site.raurl}}/A10.pdf)  | [Software execution time measurement and analysis lab](L10.html)
-**11** | 09-Dec  | [Scheduling: blocking, priority inversion]({{site.baseurl}}{{site.raurl}}/A11.pdf)  | [Small embedded project - specification]({{site.baseurl}}{{site.raurl}}/L11.pdf)
-**12** | 16-Dec  | [Scheduling: blocking, priority inheritance, OCPP, ICPP]({{site.baseurl}}{{site.raurl}}/A12.pdf)  | [Small embedded project - additional guidance]({{site.baseurl}}{{site.raurl}}/L12.pdf)
+**1** | 20-Sept  | [Introduction]({{site.baseurl}}/Lect-01.pdf) <br/> [Review IO hardware]({{site.baseurl}}/Lect-01a.pdf)<br/> *Reading:* [LS17], chapter 1  | [Introduction to hardware and software development tools](L01.html)
+**2** | 07-Oct  | [Interrupt handling. Timers]({{site.baseurl}}/A02.pdf) | [Configuring a timer and handling its interrupt](L02.html)
+**3** | 14-Oct  | [Static scheduling: theory]({{site.baseurl}}/A03.pdf) | [Mbed SDK and application shield](L03.html)
+**4** | 21-Oct  | [Static scheduling: practice]({{site.baseurl}}/A04.pdf)  | [Time-triggered scheduler implementation and application](L04.html)
+**5** | 28-Oct  | [Fixed priority preemptive scheduling]({{site.baseurl}}/A05.pdf)  | [Response time analysis](L05.html)
+**6** | 04-Nov  | [A preemptive RTOS: uC/OS-II]({{site.baseurl}}/A06.pdf)  | [uC/OS-II lab 1](L06.html)
+**7** | 11-Nov  | [uC/OS-II: semaphores]({{site.baseurl}}/A07.pdf)  | [uC/OS-II lab 2](L07.html)
+**8** | 18-Nov  | [Event-driven systems - Mbed OS 5]({{site.baseurl}}/A08.pdf)  | [OS 5 lab](L08.html)
+**9** | 25-Nov  | [Software execution time: measurement]({{site.baseurl}}/A09.pdf)  | [Software execution time measurement lab](L09.html)
+**10** | 02-Dec   | [Software execution time: analysis]({{site.baseurl}}/A10.pdf)  | [Software execution time measurement and analysis lab](L10.html)
+**11** | 09-Dec  | [Scheduling: blocking, priority inversion]({{site.baseurl}}/A11.pdf)  | [Small embedded project - specification]({{site.baseurl}}/L11.pdf)
+**12** | 16-Dec  | [Scheduling: blocking, priority inheritance, OCPP, ICPP]({{site.baseurl}}/A12.pdf)  | [Small embedded project - additional guidance]({{site.baseurl}}/L12.pdf)
 
 ### Semester 2 - Distributed Systems
 
@@ -227,10 +227,10 @@ Controller Area Network (CAN) schedulability analysis: Refuted, revisited and re
 <p><strong>FRDM-K64F and Application Shield</strong></p>
 <ul>
 <li>
-<a href="{{site.baseurl}}{{site.raurl}}/DUI0553A_cortex_m4_dgug.pdf">ARM Cortex M4 Generic User Guide</a>
+<a href="{{site.baseurl}}/DUI0553A_cortex_m4_dgug.pdf">ARM Cortex M4 Generic User Guide</a>
 </li>
 <li>
-<a href="{{site.baseurl}}{{site.raurl}}/DDI0439B_cortex_m4_r0p0_trm.pdf">ARM Cortex M4 Technical Reference Manual</a>
+<a href="{{site.baseurl}}/DDI0439B_cortex_m4_r0p0_trm.pdf">ARM Cortex M4 Technical Reference Manual</a>
 </li>
 <li>
 <a href="https://os.mbed.com/platforms/FRDM-K64F/">FRDM-K64F | Mbed</a>
@@ -239,22 +239,22 @@ Controller Area Network (CAN) schedulability analysis: Refuted, revisited and re
 <a href="https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/k-seriesperformancem4/k2x-usb/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F">FRDM-K64F at NXP</a>
 </li>
 <li>
-<a href="{{site.baseurl}}{{site.raurl}}/FRDMK64FUG.pdf">FRDM-K64F User Guide</a>
+<a href="{{site.baseurl}}/FRDMK64FUG.pdf">FRDM-K64F User Guide</a>
 </li>
 <li>
-<a href="{{site.baseurl}}{{site.raurl}}/K64P144M120SF5RM.pdf">K64 Processor Sub-Family Reference Manual</a>
+<a href="{{site.baseurl}}/K64P144M120SF5RM.pdf">K64 Processor Sub-Family Reference Manual</a>
 </li>
 <li>
-<a href="{{site.baseurl}}{{site.raurl}}/FRDM-K64F-SCH-E4.pdf">FRDM-K64F Board Schematic</a>
+<a href="{{site.baseurl}}/FRDM-K64F-SCH-E4.pdf">FRDM-K64F Board Schematic</a>
 </li>
 <li>
-<a href="{{site.baseurl}}{{site.raurl}}/FRDM-K64F_PKG_pins.pdf">FRDM-K64F pins</a>
+<a href="{{site.baseurl}}/FRDM-K64F_PKG_pins.pdf">FRDM-K64F pins</a>
 </li>
 <li>
 <a href="https://os.mbed.com/components/mbed-Application-Shield/">Mbed Application Shield</a>
 </li>
 <li>
-<a href="{{site.baseurl}}{{site.raurl}}/ApplicationShield%20V_1_0_0%20SCH.pdf">Mbed Application Shield Schematic</a>
+<a href="{{site.baseurl}}/ApplicationShield%20V_1_0_0%20SCH.pdf">Mbed Application Shield Schematic</a>
 </li>
 </ul>
 
