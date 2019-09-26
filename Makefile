@@ -6,5 +6,5 @@ build:
 
 deploy:
 	bundle exec jekyll build  --incremental
-	rsync -az _site/ alun@hesabu.net:/var/www/html/kf6010
+	rsync -avz _site/ alun@hesabu.net:/var/www/html/kf6010
 
