@@ -89,7 +89,7 @@ course of the module.
 | Week   | W/c   | Lecture   |  Practical  |
 | :----: | :---: | :-------: | :---------: | 
 **1** | 20-Sept  | [Introduction]({{site.baseurl}}/Lect-01.pdf) <br/> [Review IO hardware]({{site.baseurl}}/Lect-01a.pdf)<br/> *Reading:* [LS17], chapter 1  | [Introduction to hardware and software development tools](L01.html)
-**2** | 07-Oct  | [Interrupt handling. Timers]({{site.baseurl}}/A02.pdf) | [Configuring a timer and handling its interrupt](L02.html)
+**2** | 07-Oct  | [Interrupt handling. Timers]({{site.baseurl}}/Lect-02.pdf) | [Configuring a timer and handling its interrupt](L02.html)
 **3** | 14-Oct  | [Static scheduling: theory]({{site.baseurl}}/A03.pdf) | [Mbed SDK and application shield](L03.html)
 **4** | 21-Oct  | [Static scheduling: practice]({{site.baseurl}}/A04.pdf)  | [Time-triggered scheduler implementation and application](L04.html)
 **5** | 28-Oct  | [Fixed priority preemptive scheduling]({{site.baseurl}}/A05.pdf)  | [Response time analysis](L05.html)
