@@ -92,7 +92,7 @@ course of the module.
 **2** | 07-Oct  | [Interrupt handling. Timers]({{site.baseurl}}/Lect-02.pdf) | [Configuring a timer and handling its interrupt](L02.html)
 **3** | 14-Oct  | [Static scheduling: theory]({{site.baseurl}}/Lect-03.pdf) | [Mbed SDK and application shield](L03.html)
 **4** | 21-Oct  | [Static scheduling: practice]({{site.baseurl}}/Lect-04.pdf)  | [Time-triggered scheduler implementation and application](L04.html)
-**5** | 28-Oct  | [Fixed priority preemptive scheduling]({{site.baseurl}}/A05.pdf)  | [Response time analysis](L05.html)
+**5** | 28-Oct  | [Fixed priority preemptive scheduling]({{site.baseurl}}/Lect-05.pdf)  | [Response time analysis](L05.html)
 **6** | 04-Nov  | [A preemptive RTOS: uC/OS-II]({{site.baseurl}}/A06.pdf)  | [uC/OS-II lab 1](L06.html)
 **7** | 11-Nov  | [uC/OS-II: semaphores]({{site.baseurl}}/A07.pdf)  | [uC/OS-II lab 2](L07.html)
 **8** | 18-Nov  | [Event-driven systems - Mbed OS 5]({{site.baseurl}}/A08.pdf)  | [OS 5 lab](L08.html)
