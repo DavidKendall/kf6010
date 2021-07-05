@@ -1,0 +1,526 @@
+%&pdflatex
+\documentclass{beamer}
+\usepackage[british]{babel}
+
+\subtitle{KF6010 -- Distributed Real Time Systems}
+\date{Lecture 2}
+\title{Interrupt handling and Timers}
+\author[\url{alun.moon@northumbria.ac.uk}]{Dr Alun Moon \\\url{alun.moon@northumbria.ac.uk}}
+
+\usetheme{Madrid}
+%\usefonttheme{serif}
+\usefonttheme{structurebold}
+\setbeamertemplate{itemize item}[circle]
+\setbeamertemplate{itemize subitem}[triangle]
+\setbeamertemplate{itemize subsubitem}[square]
+\setbeamertemplate{enumerate items}[default]
+\setbeamertemplate{blocks}[rounded][shadow=false]
+
+\usepackage[T1]{fontenc}
+\usepackage[ttdefault=true]{AnonymousPro}
+
+\usepackage{hyperref}
+
+\usepackage{tcolorbox}
+\input{infoboxes}
+
+\usepackage{todonotes}
+\usepackage[os=win]{menukeys}
+
+%\usepackage{tla2}
+\usepackage{tlatex}
+\usepackage{color}
+\definecolor{boxshade}{gray}{0.85}
+\setboolean{shading}{true}
+
+\input{nu-colour}
+\usepackage{natbib}
+
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}
+
+\usepackage{minted}
+\usepackage{siunitx}
+
+\usepackage{tabularx}
+
+\begin{document}
+\frame\maketitle
+
+\begin{frame}{Introduction}
+	\begin{itemize}
+		\item Time-triggered systems and event-triggered systems rely on
+			\alert{interrupt handling}
+		\item Time-triggered --- \alert{only one} source of interrupt --
+			\alert{a timer}
+		\item Event-triggered --- potentially \alert{many} sources of
+			interrupt
+		\item Build understanding of interrupt handling by looking in detail
+			at:
+			\begin{itemize}
+				\item installing and executing interrupt handlers (ISR)
+				\item configuring a timer as an interrupt source
+			\end{itemize}
+		\item We are using the FRDM-K64F microcontroller, based on the
+			ARM~Cortex~M4 architecture
+		\item Modern microcontroller  systems have many sources of interrupt
+			and provide hardware support for these.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{K64F}
+
+	\includegraphics[width=0.49\textwidth]{K64F}
+	\includegraphics[width=0.49\textwidth]{Cortex-M4}
+
+\vspace\fill
+	\href{https://www.element14.com/community/docs/DOC-65944/l/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus}
+	{Freedom Development Platform for Kinetis K64, K63, and K24 MCUs}
+
+	\href{https://developer.arm.com/ip-products/processors/cortex-m/cortex-m4}
+	{Cortex-M4}
+\end{frame}
+
+\begin{frame}{K64F Block diagram}
+	\includegraphics[width=0.8\textwidth]{K64F-block}
+
+	\href%
+	{https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/general-purpose-mcus/k-series-cortex-m4/k6x-ethernet/kinetis-k64-120-mhz-256-kb-sram-microcontrollers-mcus-based-on-arm-cortex-m4-core:K64_120}
+	{K64\_120: Kinetis® K64-120 MHz, 256 KB SRAM Microcontrollers (MCUs) based on Arm® Cortex®-M4 Core}
+\end{frame}
+
+\begin{frame}{Memory Map}
+	\begin{columns}[onlytextwidth]
+		\begin{column}{.49\textwidth}
+	\includegraphics[height=0.8\textheight]{arm-memory-map}
+		\tiny
+		\href
+		{http://download.mikroe.com/documents/compilers/mikroc/arm/help/memory_organization.htm}
+		{ARM Cortex-M3 and Cortex-M4 Memory Organization}
+		\end{column}
+		\begin{column}{.49\textwidth}
+			\begin{itemize}
+				\item Devices are memory mapped
+				\item Simpler and more-flexible IO architecture
+			\end{itemize}
+
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Device Polling}
+	\begin{itemize}
+		\item One way to handle devices is by polling
+			\begin{enumerate}
+				\item CPU repeatedly tests status register to see if device is
+					busy
+				\item When not busy, CPU writes a command into the control
+					register
+				\item CPU sets the control-ready bit
+				\item When the device sees the control-ready bit set:
+					\begin{itemize}
+						\item reads the command from the control register
+						\item sets the busy bit in the status register
+					\end{itemize}
+				\item When the device completes I/O operation, it sets a bit in
+					the status register
+				\item CPU repeatedly tests status register
+			\end{enumerate}
+		\item Problem \alert{busy-waiting} in steps 1 and 6
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Problems}
+	\begin{itemize}
+		\item Busy waiting can be inefficient use of the CPU
+		\item CPU could be doing other useful computation instead of waiting
+		\item For example:
+			\begin{itemize}
+				\item Assume: 
+					\begin{itemize}
+						\item \SI{10}{\milli\second} for a disk I/O operation
+							to complete.
+						\item CPU clock speed of \SI{120}{\mega\hertz}
+						\item average instruction requires 1 clock cycle
+					\end{itemize}
+				\item How many instructions could the CPU execute instead of
+					waiting for the disk I/O?
+			\end{itemize}
+		\item So: instead of waiting, CPU performs other useful work and
+			allows the \emph{interrupt} it, when the I/O operation has been
+			completed.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Interrupt}
+	\begin{columns}[onlytextwidth]
+		\begin{column}{.49\textwidth}
+			\includegraphics[width=\textwidth]{nvic}
+		\end{column}
+		\begin{column}{.49\textwidth}
+			\begin{itemize}
+				\item Cortex M4 supports many interrupts
+				\item Interrupt Vector Table maps interrupt sources to ISRs
+			\end{itemize}
+
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]{Simple Interrupt driven program structure}
+	\begin{itemize}
+		\item Partition task into Foreground and Background tasks.
+			\begin{description}
+				\item[Background] Main super loop calls functions for
+					computation
+\begin{minted}{c}
+int main()
+{
+    for(;;) {
+        /* computation tasks */
+    }
+}
+\end{minted}
+\item[Foreground] Interrupt Service Routines (ISR) handle asynchronous events
+			\end{description}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Recall Fetch-Execute cycle}
+	When an interrupt occurs:
+	\begin{itemize}
+		\item Program execution is transferred to the ISR
+		\item On completion of the ISR program flow is resumed
+		\item On return to the main part, execution must continue \emph{as if
+			no interrupt had occured}
+		\item We need to save and restore execution context.
+		\item \mintinline{c}{main()} is the background task, as this is the
+			one suspended to handle foreground events (ISR) tasks
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{ARM Cortex M4 Core Registers}
+	\begin{columns}[onlytextwidth]
+	\begin{column}{.65\textwidth}
+	\includegraphics[scale=0.3]{m4-core-reg}\nocite{M4:UG}
+\end{column}
+\begin{column}{0.35\textwidth}
+		\begin{itemize}
+			\item 15 32bit registers
+			\item 5 special purpose registers
+		\end{itemize}
+	\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Stack-frame}{Interrupt entry}
+	\begin{columns}[onlytextwidth]
+	\begin{column}{.4\textwidth}
+	\includegraphics[scale=0.3]{stack-frame}
+	\end{column}
+	\begin{column}{.6\textwidth}
+		\begin{itemize}
+			\item Interrupt automatically saves 8 registers, pushing them to
+				the stack
+			\item NVIC fetches ISR and writes into PC/R15
+			\item Return address is written to LR (Link-Register/R14)
+			\item Pushes R0--R3 to stack
+			\item if ISR needs to use more registers it \alert{must} handle
+				this itself
+		\end{itemize}
+	\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Stack-frame}{Interrupt exit}
+	\begin{columns}[onlytextwidth]
+	\begin{column}{.4\textwidth}
+	\includegraphics[scale=0.3]{stack-frame}
+	\end{column}
+	\begin{column}{.6\textwidth}
+		\begin{itemize}
+			\item ISR returns like a normal function,
+				\begin{itemize}
+					\item \alert{except} special `return'
+				code in LR caused processor to restore stack frame
+				automatically
+				\end{itemize}
+			\item Any extra registers pushed , \alert{must} be restored before
+				exit
+			\item it is often necessary to clear the interrupt status flags in
+				the peripheral before returning from the ISR
+		\end{itemize}
+	\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Interrupt Vector Table}
+	\begin{columns}[onlytextwidth]
+		\begin{column}{.5\textwidth}
+	\includegraphics[scale=0.3]{vector-table}
+		\end{column}
+		\begin{column}{.5\textwidth}
+			\begin{itemize}
+		\item The NVIC controller uses the vector table to determine which ISR
+			to call
+		\item The  vector table is just a list of addresses to call as ISRs
+		\item The vector used is determined by the source of the interrupt ---
+			read the manual!
+			\end{itemize}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]{startup code}
+	\renewcommand{\theFancyVerbLine}{\rmfamily \arabic{FancyVerbLine}}
+	\begin{center}
+	\inputminted[linenos=true,numbers=both,firstline=46,lastline=60]{asm}{startup_MK64F12.S}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]{PIT Interrupt vector}
+	\begin{columns}[onlytextwidth]
+		\begin{column}{.5\textwidth}
+			\inputminted[linenos,firstline=113,lastline=116]{asm}{startup_MK64F12.S}
+		\end{column}
+		\begin{column}{.5\textwidth}
+			\begin{itemize}
+				\item Looking down the file we find the name of the interrupt
+					at line 113
+				\item This is an assembler label
+				\item We want to write a C function with this name
+			\end{itemize}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]{Installing an Interrupt Handler}
+	\begin{columns}[onlytextwidth]
+	\begin{column}{.5\textwidth}
+\begin{minted}{c}
+void PIT0_IRQHandler () {
+
+}
+\end{minted}
+
+\begin{minted}{c}
+int main() {
+
+    NVIC_EnableIRQ(PIT0_IRQn);
+
+}
+\end{minted}
+	\end{column}
+	\begin{column}{.5\textwidth}
+		\begin{itemize}
+			\item C function has same name as label in vector table
+			\item \alert{Note:} Interrupt handlers \emph{must} be compiled
+				with C linkage and not C++ linkage
+			\item The interrupt \emph{must} be enabled in the NVIC.  We can
+				use a CMSIS function from the device header
+		\end{itemize}
+	\end{column}
+	\end{columns}
+
+	\pause
+	\begin{block}{}
+As long as your filenames have \path{.c} and \path{.h} extensions, the
+\texttt{gcc} compiler will automatically use C conventions.  When we move to
+C++ you will have to prefix the ISR with \mintinline{c}{extern "C"}
+\begin{exampleblock}{}
+\begin{minted}{c}
+extern "C" PIT0_IRQHandler () {
+}
+\end{minted}
+\end{exampleblock}
+	\end{block}
+\end{frame}
+
+
+\begin{frame}{Periodic Interrupt Timer (PIT)}
+	The PIT module is an array of timers that can be used to raise interrupts
+	at a set periodic rate.
+
+	Main features:
+	\begin{itemize}
+		\item Timers generate PIT interrupts
+		\item Timers generate DMA trigger pulses
+		\item Mask-able interrupts
+		\item Independent timeout periods for each timer
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{PIT configuration}
+	\begin{columns}[onlytextwidth]
+		\begin{column}{.5\textwidth}
+	\includegraphics[scale=.3]{PIT}
+		\end{column}
+		\begin{column}{.5\textwidth}
+			\begin{itemize}
+				\item PIT driven by the \emph{Peripheral Bus Clock}
+				\item In the FRDM K64F this runs at \SI{60}{\mega\hertz}
+			\end{itemize}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Clock configuration}
+	\begin{columns}[onlytextwidth]
+	\begin{column}{.5\textwidth}
+	\includegraphics[scale=.3]{Clock}
+	\end{column}
+	\begin{column}{.5\textwidth}
+		\begin{description}
+			\item[MCG] Multi-purpose Clock Generator
+			\item[SIM] System Integration Module
+		\end{description}
+	\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]{Memory Map}
+	\begin{tabular}{lllp{18ex}}
+		\hline
+		Address & Register name & & function \\ \hline
+		\texttt{4003 7000} & PIT Module Control & \mintinline{c}{PIT_MCR} &
+		Module control -- \break effects all timers\\
+		\hline\hline
+		\texttt{4003 7100} & Timer Load Value & \mintinline{c}{PIT_LDVAL0} &
+		PIT0 reset value -- \break determines timer period\\
+		\texttt{4003 7104} & Current Timer Value & \mintinline{c}{PIT_CVAL0}
+		\\
+		\texttt{4003 7108} & Timer Control & \mintinline{c}{PIT_TCTRL0} &
+		Controls behaviour of PIT0\\
+		\texttt{4003 710C} & Timer Flags & \mintinline{c}{PIT_TFLG0} & 
+		Timer-0 status flags\\
+		\hline\hline
+		\texttt{4003 7110} & Timer Load Value & \mintinline{c}{PIT_LDVAL1} \\
+	\end{tabular}
+\end{frame}
+
+\begin{frame}{PIT control from C}
+	To program a PIT channel to provide an interrupt, several things have to
+	happen:
+	\begin{enumerate}
+		\item the clock gate to the PIT must be enabled in the System Clock
+			Gating control register (\mintinline{c}{SIM_SCGC6}
+			\citet[12.2.13]{K64F:Ref-manual})
+		\item the clock to the PIT timers must be enabled in the PIT Module
+			Control Register (\mintinline{c}{PIT_MCR} \citet[41.3.1]{K64F:Ref-manual}\\
+		\item The Timer Load Value (\mintinline{c}{PIT_MCR})
+			\citet[41.3.2]{K64F:Refmanual}) must be loaded with the correct value
+		\item The Timer Interrupt Enable (\texttt{TIE}) bit must be set in the
+			Timer Control register (\mintinline{c}{PIT_TCTRL0}
+			\citet[41.3.4]{K64F:Ref-manual})
+		\item The timer must be started by setting the Timer Enable (TE) bit
+			in the control register
+		\item The PIT interrupt must be enabled in the NVIC
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{The PIT Interrupt handler}
+	\begin{alertblock}{}
+		Every time the PIT Interrupt is raised, it must be cleared by writing
+		a 1 to the Timer Interrupt Flag in the Timer Flag register
+		(\mintinline{c}{PIT_TFLG0} \citet[41.3.5]{K64F:Ref-manual})
+	\end{alertblock}
+
+	\begin{block}{PIT Behaviour}
+		\begin{itemize}
+			\item The timer start value is loaded from the Load Value Register
+			\item For each tick of the bus, the timer counter is decremented
+				by 1
+			\item When the value of the timer reaches 0, the timer interrupt
+				is raised
+			\item When the interrupt has been raised, the timer resets and
+				loads the start value from the Load Value Register
+		\end{itemize}
+	\end{block}
+
+\end{frame}
+
+\begin{frame}{Timer Load Value}{calculating the value for the \texttt{LDVAL} register}
+	\begin{exampleblock}{}
+		\begin{itemize}
+			\item If \texttt{LDVAL} is 0 -- we get an interrupt every tick
+			\item If \texttt{LDVAL} is 1 -- we get an interrupt every other
+				(2) ticks
+			\item The Load Value is $n-1$ ticks, for an interrupt every $n$
+				ticks
+			\item The bus runs at \SI{60}{\mega\hertz} or \num{60e6} ticks per
+				second
+		\end{itemize}
+	\end{exampleblock}
+
+	\begin{alertblock}{For an interrupt every $t$ seconds}
+		\[
+			L = \left\lfloor t \times \num{60e6} \right\rfloor - 1
+		\]
+	\end{alertblock}
+
+	\begin{alertblock}{For an interrupt every $q$ micro-second
+			(\si{\micro\second})}
+			\[
+				L = \left\lfloor q \times 60 \right\rfloor -1
+			\]
+	\end{alertblock}
+\end{frame}
+
+\begin{frame}{Timer Load Value}
+
+	\begin{exampleblock}{We want to toggle the red LED every 0.5 seconds}
+		\vspace{-1em}\pause
+		\[
+			L = t\times\num{60e6} -1 = 0.5\times\num{60e6} -1 = \num{30e6}-1 =
+			\num{29999999}
+		\]
+	\end{exampleblock}\pause
+
+	\begin{exampleblock}{We want to flash the blue LED every half-second}
+		Flash the LED, is turn on and turn off every half-second, toggle every
+		quarter second.\pause
+		\[ L = t\times\num{60e6}-1 = 0.25\times\num{60e6}-1 = \num{15e6}-1 =
+			\num{14999999}
+		\]
+	\end{exampleblock}\pause
+
+	\begin{exampleblock}{We want to flash the green LED 10 times a second}
+		10 times a second is \SI{10}{\hertz}, period is \SI{0.1}{\second},
+		toggle every \SI{0.05}{\second} (\SI{50e3}{\micro\second})\pause
+		\[
+			L = q\times 60 - 1 = \num{50e3}\times 60 -1 = \num{3000e3} -1 =
+			\num{2999999}
+		\]
+
+	\end{exampleblock}
+\end{frame}
+
+
+\begin{frame}[fragile]{C code}
+\begin{minted}{c}
+#include "MK64F12.h"
+
+void PIT_init(void) {
+    SIM_SCGC6 |= (1u << 23);
+    PIT_MCR_REG(PIT) = 0u;
+    PIT_LDVAL_REG(PIT, 0) = 29999999;
+    PIT_TCTRL_REG(PIT, 0) |= PIT_TCTRL_TIE_MASK;
+    NVIC_EnableIRQ(PIT0_IRQn);
+    PIT_TCTRL_REG(PIT, 0) |= PIT_TCTRL_TEN_MASK;
+}
+
+void PIT0_IRQHandler(void) {
+    blue_toggle();
+    PIT_TFLG_REG(PIT,0) |= PIT_TFLG_TIF_MASK;
+}
+
+\end{minted}
+\end{frame}
+
+\begin{frame}{Bibliography}
+	\bibliographystyle{plainnat}
+	\bibliography{K64F}
+\end{frame}
+
+\end{document}
+

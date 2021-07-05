@@ -6,6 +6,9 @@ kramdown:
   auto_ids: true
   syntax_highlighter: rouge
 
+plugins:
+    - jekyll-octicons
+
 title: KF6010
 subtitle: Distributed real-time systems
 authors: David Kendall, Alun Moon

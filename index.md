@@ -31,15 +31,15 @@ students to put these ideas into practice in a variety of exercises.
 |   |    |
 |---|:---|
 |Module Tutor &nbsp;  | [Alun Moon](http://computing.northumbria.ac.uk/staff/cgam1)|
-|Lecturer      | [David Kendall](http://computing.northumbria.ac.uk/staff/cgdk2)
 |Lecturer      | [Nanlin Jin](https://www.northumbria.ac.uk/about-us/our-staff/j/nanlin-jin/)
+|Lecturer      | [Martin Wonders](https://www.northumbria.ac.uk/about-us/our-staff/w/martin-wonders/)
 
 ## Teaching Arrangements
 
 |   |    |
 |---|:---|
-**Lecture** &nbsp;| Thu 11.00-12.00 ELA 102b
-**Lab/Seminar**       | Thu 13.00-14.00  CIS 201 
+**Lecture** &nbsp;| Monday 16.00 SAN 314 (Sandyford Building [google maps link](https://www.google.co.uk/maps/place/Northumbria+University,+Sandyford+Building/@54.9790741,-1.6103249,17z/data=!3m1!4b1!4m5!3m4!1s0x487e70cf46a066d3:0x4187b6a4603c0deb!8m2!3d54.979071!4d-1.6081362))
+**Lab/Seminar**       | Tuesday 11.00 CIS 202
 
 <p class="text-info">
 You should attend the lecture session and <em>one</em>
@@ -88,18 +88,18 @@ course of the module.
 
 | Week   | W/c   | Lecture   |  Practical  |
 | :----: | :---: | :-------: | :---------: | 
-**1** | 01-Oct &nbsp; | [Introduction]({{site.baseurl}}{{site.raurl}}/A01.pdf) <br/> *Reading:* [LS17], chapter 1 &nbsp; | [Introduction to hardware and software development tools](L01.html)
-**2** | 08-Oct &nbsp; | [Interrupt handling. Timers]({{site.baseurl}}{{site.raurl}}/A02.pdf) | [Configuring a timer and handling its interrupt](L02.html)
-**3** | 15-Oct &nbsp; | [Static scheduling: theory]({{site.baseurl}}{{site.raurl}}/A03.pdf) | [Mbed SDK and application shield](L03.html)
-**4** | 22-Oct &nbsp; | [Static scheduling: practice]({{site.baseurl}}{{site.raurl}}/A04.pdf) &nbsp; | [Time-triggered scheduler implementation and application](L04.html)
-**5** | 29-Oct &nbsp; | [Fixed priority preemptive scheduling]({{site.baseurl}}{{site.raurl}}/A05.pdf) &nbsp; | [Response time analysis](L05.html)
-**6** | 05-Nov &nbsp; | [A preemptive RTOS: uC/OS-II]({{site.baseurl}}{{site.raurl}}/A06.pdf) &nbsp; | [uC/OS-II lab 1](L06.html)
-**7** | 12-Nov &nbsp; | [uC/OS-II: semaphores]({{site.baseurl}}{{site.raurl}}/A07.pdf) &nbsp; | [uC/OS-II lab 2](L07.html)
-**8** | 19-Nov &nbsp; | [Event-driven systems - Mbed OS 5]({{site.baseurl}}{{site.raurl}}/A08.pdf) &nbsp; | [OS 5 lab](L08.html)
-**9** | 26-Nov &nbsp; | [Software execution time: measurement]({{site.baseurl}}{{site.raurl}}/A09.pdf) &nbsp; | [Software execution time measurement lab](L09.html)
-**10** | 03-Dec  &nbsp; | [Software execution time: analysis]({{site.baseurl}}{{site.raurl}}/A10.pdf) &nbsp; | [Software execution time measurement and analysis lab](L10.html)
-**11** | 10-Dec &nbsp; | [Scheduling: blocking, priority inversion]({{site.baseurl}}{{site.raurl}}/A11.pdf) &nbsp; | [Small embedded project - specification]({{site.baseurl}}{{site.raurl}}/L11.pdf)
-**12** | 17-Dec &nbsp; | [Scheduling: blocking, priority inheritance, OCPP, ICPP]({{site.baseurl}}{{site.raurl}}/A12.pdf) &nbsp; | [Small embedded project - additional guidance]({{site.baseurl}}{{site.raurl}}/L12.pdf)
+**1** | 20-Sept  | [Introduction]({{site.baseurl}}/Lect-01.pdf) <br/> [Review IO hardware]({{site.baseurl}}/Lect-01a.pdf)<br/> *Reading:* [LS17], chapter 1  | [Introduction to hardware and software development tools](L01.html)
+**2** | 07-Oct  | [Interrupt handling. Timers]({{site.baseurl}}/Lect-02.pdf) | [Configuring a timer and handling its interrupt](L02.html)
+**3** | 14-Oct  | [Static scheduling: theory]({{site.baseurl}}/Lect-03.pdf) | [Mbed SDK and application shield](L03.html)
+**4** | 21-Oct  | [Static scheduling: practice]({{site.baseurl}}/Lect-04.pdf)  | [Time-triggered scheduler implementation and application](L04.html)
+**5** | 28-Oct  | [Fixed priority preemptive scheduling]({{site.baseurl}}/Lect-05.pdf)  | [Response time analysis](L05.html)
+**6** | 04-Nov  | [A preemptive RTOS: uC/OS-II]({{site.baseurl}}/A06.pdf)  | [uC/OS-II lab 1](L06.html)
+**7** | 11-Nov  | [uC/OS-II: semaphores]({{site.baseurl}}/A07.pdf)  | [uC/OS-II lab 2](L07.html)
+**8** | 18-Nov  | [Event-driven systems - Mbed OS 5]({{site.baseurl}}/A08.pdf)  | [OS 5 lab](L08.html)
+**9** | 25-Nov  | [Software execution time: measurement]({{site.baseurl}}/A09.pdf)  | [Software execution time measurement lab](L09.html)
+**10** | 02-Dec   | [Software execution time: analysis]({{site.baseurl}}/A10.pdf)  | [Software execution time measurement and analysis lab](L10.html)
+**11** | 09-Dec  | [Scheduling: blocking, priority inversion]({{site.baseurl}}/A11.pdf)  | [Small embedded project - specification]({{site.baseurl}}/L11.pdf)
+**12** | 16-Dec  | [Scheduling: blocking, priority inheritance, OCPP, ICPP]({{site.baseurl}}/A12.pdf)  | [Small embedded project - additional guidance]({{site.baseurl}}/L12.pdf)
 
 ### Semester 2 - Distributed Systems
 
@@ -111,11 +111,11 @@ course of the module.
 **4** | 18-Feb &nbsp; | [Introduction to Internet of Things]({{site.baseurl}}{{site.raurl}}/B04.pdf) &nbsp; | [Controller Area Network](M04.html)
 **5** | 25-Feb &nbsp; | [Internet of Things - Protocols and Security]({{site.baseurl}}{{site.raurl}}/B05.pdf) &nbsp; | [IoT](M05.html)
 **6** | 04-Mar &nbsp; | [Methods and Standards]({{site.baseurl}}{{site.raurl}}/B06.pdf) &nbsp; | [IoT](M06.html)
-**7** | 11-Mar &nbsp; | [Introduction to the LoRa mbed shield and sensors]({{site.baseurl}}{{site.raurl}}/B07.pdf) &nbsp; | [LoRaWAN](M07.html)
-**8** | 18-Mar &nbsp; | [Wireless communication principles]({{site.baseurl}}{{site.raurl}}/B08.pdf) &nbsp; | [LoraWAN](M08.html)
-**9** | 25-Mar &nbsp; | [Using LoRa in IoT applications]({{site.baseurl}}{{site.raurl}}/B09.pdf) &nbsp; | [LoRaWAN](M09.html)
-**10** | 01-Apr  &nbsp; | [System reliability - 1]({{site.baseurl}}{{site.raurl}}/B10.pdf) &nbsp; | [Reliability analysis](M10.html)
-**11** | 29-Apr &nbsp; | [System reliability - 2]({{site.baseurl}}{{site.raurl}}/B11.pdf) &nbsp; | [Reliability analysis](M11.html)
+**7**  | 11-Mar &nbsp; | [Introduction to the LoRa mbed shield and sensors]({{site.baseurl}}{{site.raurl}}/B07.pdf) &nbsp; | [LoRaWAN](M07.html)
+**8**  | 18-Mar &nbsp; | [System reliability - 1]({{site.baseurl}}{{site.raurl}}/B08.pdf) &nbsp; | [LoraWAN](M08.html)
+**9**  | 25-Mar &nbsp; | [System reliability - 2]({{site.baseurl}}{{site.raurl}}/B09.pdf) &nbsp; | [N-version programming](M09.html)
+**10** | 01-Apr &nbsp; | [Wireless communication principles]({{site.baseurl}}{{site.raurl}}/B10.pdf) &nbsp; | [Reliability analysis](M10.html)
+**11** | 29-Apr &nbsp; | [Using LoRa in IoT applications]({{site.baseurl}}{{site.raurl}}/B11.pdf) &nbsp; | [Reliability analysis](M11.html)
 **12** | 06-May &nbsp; | [Going further - multicore, the cloud, and fog]({{site.baseurl}}{{site.raurl}}/B12.pdf) &nbsp; | Assignment support
 
 <br/>
@@ -140,7 +140,7 @@ laboratory sessions. Additionally email will be used
 for more formal feedback on summative assessment.
 
 
-<a class="btn btn-large btn-primary" href="{{site.baseurl}}{{site.raurl}}/assgn.pdf"><i class="icon-upload-alt"></i>Download Assignment Specification</a>
+<a class="btn btn-large btn-primary" href="">Download Assignment Specification</a> (not published yet)
 
 
 ## Recommended Reading
@@ -227,10 +227,10 @@ Controller Area Network (CAN) schedulability analysis: Refuted, revisited and re
 <p><strong>FRDM-K64F and Application Shield</strong></p>
 <ul>
 <li>
-<a href="{{site.baseurl}}{{site.raurl}}/DUI0553A_cortex_m4_dgug.pdf">ARM Cortex M4 Generic User Guide</a>
+<a href="{{site.baseurl}}/DUI0553A_cortex_m4_dgug.pdf">ARM Cortex M4 Generic User Guide</a>
 </li>
 <li>
-<a href="{{site.baseurl}}{{site.raurl}}/DDI0439B_cortex_m4_r0p0_trm.pdf">ARM Cortex M4 Technical Reference Manual</a>
+<a href="{{site.baseurl}}/DDI0439B_cortex_m4_r0p0_trm.pdf">ARM Cortex M4 Technical Reference Manual</a>
 </li>
 <li>
 <a href="https://os.mbed.com/platforms/FRDM-K64F/">FRDM-K64F | Mbed</a>
@@ -239,22 +239,22 @@ Controller Area Network (CAN) schedulability analysis: Refuted, revisited and re
 <a href="https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/k-seriesperformancem4/k2x-usb/freedom-development-platform-for-kinetis-k64-k63-and-k24-mcus:FRDM-K64F">FRDM-K64F at NXP</a>
 </li>
 <li>
-<a href="{{site.baseurl}}{{site.raurl}}/FRDMK64FUG.pdf">FRDM-K64F User Guide</a>
+<a href="{{site.baseurl}}/FRDMK64FUG.pdf">FRDM-K64F User Guide</a>
 </li>
 <li>
-<a href="{{site.baseurl}}{{site.raurl}}/K64P144M120SF5RM.pdf">K64 Processor Sub-Family Reference Manual</a>
+<a href="{{site.baseurl}}/K64P144M120SF5RM.pdf">K64 Processor Sub-Family Reference Manual</a>
 </li>
 <li>
-<a href="{{site.baseurl}}{{site.raurl}}/FRDM-K64F-SCH-E4.pdf">FRDM-K64F Board Schematic</a>
+<a href="{{site.baseurl}}/FRDM-K64F-SCH-E4.pdf">FRDM-K64F Board Schematic</a>
 </li>
 <li>
-<a href="{{site.baseurl}}{{site.raurl}}/FRDM-K64F_PKG_pins.pdf">FRDM-K64F pins</a>
+<a href="{{site.baseurl}}/FRDM-K64F_PKG_pins.pdf">FRDM-K64F pins</a>
 </li>
 <li>
 <a href="https://os.mbed.com/components/mbed-Application-Shield/">Mbed Application Shield</a>
 </li>
 <li>
-<a href="{{site.baseurl}}{{site.raurl}}/ApplicationShield%20V_1_0_0%20SCH.pdf">Mbed Application Shield Schematic</a>
+<a href="{{site.baseurl}}/ApplicationShield%20V_1_0_0%20SCH.pdf">Mbed Application Shield Schematic</a>
 </li>
 </ul>
 
